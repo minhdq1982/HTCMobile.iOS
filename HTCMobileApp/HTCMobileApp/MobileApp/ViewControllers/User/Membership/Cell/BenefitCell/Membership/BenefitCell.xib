@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BenefitCell" id="KGk-i7-Jjw" customClass="BenefitCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXa-tW-vKb">
+                        <rect key="frame" x="12" y="11" width="262" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppD-5b-qGJ">
+                        <rect key="frame" x="284" y="10" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="OPF-21-oBo"/>
+                            <constraint firstAttribute="height" constant="24" id="ZUQ-iK-hG9"/>
+                        </constraints>
+                        <state key="normal" image="benefit_arrow"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXD-EV-c2F" userLabel="Separator View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Rjd-Gh-Vrd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="yXa-tW-vKb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3ms-N1-baL"/>
+                    <constraint firstItem="ppD-5b-qGJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7CL-qX-ayg"/>
+                    <constraint firstItem="ppD-5b-qGJ" firstAttribute="leading" secondItem="yXa-tW-vKb" secondAttribute="trailing" constant="10" id="fPd-ii-bSw"/>
+                    <constraint firstItem="yXa-tW-vKb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="p3D-gN-l7g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="ppD-5b-qGJ" secondAttribute="trailing" constant="12" id="CWK-N8-gxf"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="NXD-EV-c2F" secondAttribute="trailing" id="hdR-4Z-YlJ"/>
+                <constraint firstItem="NXD-EV-c2F" firstAttribute="top" secondItem="njF-e1-oar" secondAttribute="top" id="onQ-ty-oBx"/>
+                <constraint firstItem="NXD-EV-c2F" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="pxj-CJ-wWL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="titleLabel" destination="yXa-tW-vKb" id="Nd0-rd-Foq"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="benefit_arrow" width="8" height="14"/>
+    </resources>
+</document>

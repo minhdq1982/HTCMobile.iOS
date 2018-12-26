@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Bold.ttf">
+            <string>HyundaiSansVnHeadOffice-Bold</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AgencyPagerViewCell" id="LgS-Vw-tqX" customClass="AgencyPagerViewCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FE-ze-Eit">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyundai Cầu Diễn 1S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-q1-nbT">
+                                <rect key="frame" x="10" y="4" width="300" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Địa chỉ số 22 trần duy hưng, trung hoà, cầu giấy, Hà nội" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oez-aI-OVd">
+                                <rect key="frame" x="10" y="33.5" width="300" height="37.5"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotline CSKH:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMo-3r-Hse" userLabel="Hotline CSKH">
+                                <rect key="frame" x="10" y="79" width="97" height="19"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotline Bán hàng:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za9-ec-F4M">
+                                <rect key="frame" x="10" y="102" width="124" height="19"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotline Dịch vụ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enE-Zd-M96">
+                                <rect key="frame" x="10" y="125" width="108" height="19"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website: http://hyundaicaudien.vn/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECm-gp-MmT">
+                                <rect key="frame" x="10" y="152" width="300" height="19"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.66666666669999997" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIx-1b-gkv" userLabel="DirectionButton">
+                                <rect key="frame" x="10" y="176" width="145" height="32"/>
+                                <color key="backgroundColor" red="0.0" green="0.15686274509803921" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="YbS-gw-agR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Chỉ đường"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_direction" translatesAutoresizingMaskIntoConstraints="NO" id="SIn-uB-bY4">
+                                <rect key="frame" x="37.5" y="182" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Kh8-z5-ygJ"/>
+                                    <constraint firstAttribute="height" constant="20" id="VOD-zg-Fb8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfo-qC-OxM" userLabel="GoogleMapButton">
+                                <rect key="frame" x="165" y="176" width="145" height="32"/>
+                                <color key="backgroundColor" red="0.0" green="0.15686274509803921" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="24" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Google map">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google_maps" translatesAutoresizingMaskIntoConstraints="NO" id="mzT-I7-8Sb">
+                                <rect key="frame" x="187.5" y="182" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="W6h-rd-7kd"/>
+                                    <constraint firstAttribute="height" constant="20" id="ZKB-fe-kUF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1900 2554" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fc-rg-a1N">
+                                <rect key="frame" x="140" y="79" width="76" height="19"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.66666666666666663" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1900 3554" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ir3-D0-bTz">
+                                <rect key="frame" x="140" y="102" width="76" height="19"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.66666666666666663" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1900 4554" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fri-Yo-ydI">
+                                <rect key="frame" x="140" y="125" width="76" height="19"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.66666666666666663" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SIn-uB-bY4" firstAttribute="centerY" secondItem="NIx-1b-gkv" secondAttribute="centerY" id="0Qw-Ac-aqD"/>
+                            <constraint firstItem="Pfo-qC-OxM" firstAttribute="top" secondItem="NIx-1b-gkv" secondAttribute="top" id="0iT-Li-j1S"/>
+                            <constraint firstItem="Pfo-qC-OxM" firstAttribute="height" secondItem="NIx-1b-gkv" secondAttribute="height" id="3nH-mE-E7B"/>
+                            <constraint firstItem="BMo-3r-Hse" firstAttribute="top" secondItem="Oez-aI-OVd" secondAttribute="bottom" constant="8" id="3ni-TO-ebB"/>
+                            <constraint firstAttribute="trailing" secondItem="Pfo-qC-OxM" secondAttribute="trailing" constant="10" id="8t2-kw-Mr2"/>
+                            <constraint firstItem="BMo-3r-Hse" firstAttribute="leading" secondItem="Vda-q1-nbT" secondAttribute="leading" id="92i-Md-La5"/>
+                            <constraint firstItem="Za9-ec-F4M" firstAttribute="top" secondItem="BMo-3r-Hse" secondAttribute="bottom" constant="4" id="9tV-8U-tDv"/>
+                            <constraint firstItem="ir3-D0-bTz" firstAttribute="centerY" secondItem="Za9-ec-F4M" secondAttribute="centerY" id="BVh-KY-jxO"/>
+                            <constraint firstItem="SIn-uB-bY4" firstAttribute="centerX" secondItem="NIx-1b-gkv" secondAttribute="centerX" constant="-35" id="Edk-kn-04E"/>
+                            <constraint firstItem="Oez-aI-OVd" firstAttribute="leading" secondItem="Vda-q1-nbT" secondAttribute="leading" id="Ivl-Hq-jBy"/>
+                            <constraint firstItem="ECm-gp-MmT" firstAttribute="leading" secondItem="Vda-q1-nbT" secondAttribute="leading" id="JtL-bc-uZp"/>
+                            <constraint firstItem="enE-Zd-M96" firstAttribute="top" secondItem="Za9-ec-F4M" secondAttribute="bottom" constant="4" id="LZI-gA-VLt"/>
+                            <constraint firstItem="enE-Zd-M96" firstAttribute="leading" secondItem="Za9-ec-F4M" secondAttribute="leading" id="OPV-fO-pFy"/>
+                            <constraint firstItem="Fri-Yo-ydI" firstAttribute="leading" secondItem="ir3-D0-bTz" secondAttribute="leading" id="Obf-c0-fFA"/>
+                            <constraint firstItem="Pfo-qC-OxM" firstAttribute="width" secondItem="NIx-1b-gkv" secondAttribute="width" id="Q4o-WC-ur0"/>
+                            <constraint firstItem="ECm-gp-MmT" firstAttribute="top" secondItem="enE-Zd-M96" secondAttribute="bottom" constant="8" id="S84-ot-5Sb"/>
+                            <constraint firstItem="2fc-rg-a1N" firstAttribute="leading" secondItem="9FE-ze-Eit" secondAttribute="leading" constant="140" id="Tea-7p-Jkc"/>
+                            <constraint firstItem="ECm-gp-MmT" firstAttribute="trailing" secondItem="Vda-q1-nbT" secondAttribute="trailing" id="Udy-cc-Gag"/>
+                            <constraint firstAttribute="bottom" secondItem="NIx-1b-gkv" secondAttribute="bottom" constant="12" id="WqI-tC-gbZ"/>
+                            <constraint firstItem="2fc-rg-a1N" firstAttribute="centerY" secondItem="BMo-3r-Hse" secondAttribute="centerY" id="YXx-Xn-DTS"/>
+                            <constraint firstItem="NIx-1b-gkv" firstAttribute="leading" secondItem="9FE-ze-Eit" secondAttribute="leading" constant="10" id="ZPH-XL-gpm"/>
+                            <constraint firstItem="Za9-ec-F4M" firstAttribute="leading" secondItem="BMo-3r-Hse" secondAttribute="leading" id="a9G-dQ-zud"/>
+                            <constraint firstItem="Oez-aI-OVd" firstAttribute="top" secondItem="Vda-q1-nbT" secondAttribute="bottom" constant="8" id="bPz-tx-0qb"/>
+                            <constraint firstItem="mzT-I7-8Sb" firstAttribute="centerX" secondItem="Pfo-qC-OxM" secondAttribute="centerX" constant="-40" id="bmc-6y-OM3"/>
+                            <constraint firstItem="Vda-q1-nbT" firstAttribute="top" secondItem="9FE-ze-Eit" secondAttribute="top" constant="4" id="eGx-9J-3ol"/>
+                            <constraint firstItem="Fri-Yo-ydI" firstAttribute="centerY" secondItem="enE-Zd-M96" secondAttribute="centerY" id="n3o-av-Eka"/>
+                            <constraint firstItem="Oez-aI-OVd" firstAttribute="trailing" secondItem="Vda-q1-nbT" secondAttribute="trailing" id="rzp-2M-awj"/>
+                            <constraint firstItem="Vda-q1-nbT" firstAttribute="leading" secondItem="9FE-ze-Eit" secondAttribute="leading" constant="10" id="t1h-xf-YL2"/>
+                            <constraint firstItem="Pfo-qC-OxM" firstAttribute="leading" secondItem="NIx-1b-gkv" secondAttribute="trailing" constant="10" id="uXb-71-DkH"/>
+                            <constraint firstAttribute="trailing" secondItem="Vda-q1-nbT" secondAttribute="trailing" constant="10" id="uZm-VY-3rp"/>
+                            <constraint firstItem="ir3-D0-bTz" firstAttribute="leading" secondItem="2fc-rg-a1N" secondAttribute="leading" id="ydz-Ey-52G"/>
+                            <constraint firstItem="mzT-I7-8Sb" firstAttribute="centerY" secondItem="Pfo-qC-OxM" secondAttribute="centerY" id="zXE-2w-mDL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9FE-ze-Eit" secondAttribute="trailing" id="674-uu-DPI"/>
+                <constraint firstAttribute="bottom" secondItem="9FE-ze-Eit" secondAttribute="bottom" id="LGU-f9-IIz"/>
+                <constraint firstItem="9FE-ze-Eit" firstAttribute="top" secondItem="LgS-Vw-tqX" secondAttribute="top" id="OvY-9z-l1v"/>
+                <constraint firstItem="9FE-ze-Eit" firstAttribute="leading" secondItem="LgS-Vw-tqX" secondAttribute="leading" id="t8X-gj-xzc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ya5-R2-dG4"/>
+            <size key="customSize" width="320" height="234"/>
+            <connections>
+                <outlet property="agencyAddressLabel" destination="Oez-aI-OVd" id="8vb-Z7-iJw"/>
+                <outlet property="agencyNameLabel" destination="Vda-q1-nbT" id="WZO-ew-aLw"/>
+                <outlet property="cskhPhoneLabel" destination="2fc-rg-a1N" id="Mce-Xi-pMb"/>
+                <outlet property="directionButton" destination="NIx-1b-gkv" id="6a0-pD-iF9"/>
+                <outlet property="googleMapButton" destination="Pfo-qC-OxM" id="ZfZ-HZ-X6i"/>
+                <outlet property="hotlineCSKH" destination="BMo-3r-Hse" id="QnQ-4E-rmb"/>
+                <outlet property="hotlineSellProduct" destination="Za9-ec-F4M" id="ba5-ZD-PuO"/>
+                <outlet property="hotlineServices" destination="enE-Zd-M96" id="itA-Ws-Tkq"/>
+                <outlet property="sellProductPhoneLabel" destination="ir3-D0-bTz" id="MtQ-jX-9Lz"/>
+                <outlet property="servicePhoneLabel" destination="Fri-Yo-ydI" id="6sW-eR-69b"/>
+                <outlet property="websiteLabel" destination="ECm-gp-MmT" id="vLK-yI-f2e"/>
+            </connections>
+            <point key="canvasLocation" x="209.59999999999999" y="-107.94602698650675"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="google_maps" width="20" height="20"/>
+        <image name="map_direction" width="20" height="20"/>
+    </resources>
+</document>

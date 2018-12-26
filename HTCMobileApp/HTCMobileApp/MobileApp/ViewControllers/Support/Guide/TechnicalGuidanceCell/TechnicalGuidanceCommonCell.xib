@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TechnicalGuidanceCommonCell" rowHeight="214" id="ECd-oO-T2y" customClass="TechnicalGuidanceCommonCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ECd-oO-T2y" id="eOO-OT-azp">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="181.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/06/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aM-Qu-qv3">
+                        <rect key="frame" x="12" y="24" width="351" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgC-pZ-DfM">
+                        <rect key="frame" x="12" y="44.5" width="351" height="25"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="20"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5pR-kG-prp">
+                        <rect key="frame" x="0.0" y="77.5" width="375" height="88"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nls-XG-hmf">
+                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="88"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image_bg_small" translatesAutoresizingMaskIntoConstraints="NO" id="Rvj-kI-6sE">
+                                        <rect key="frame" x="12" y="0.0" width="163.5" height="88"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Rvj-kI-6sE" secondAttribute="trailing" constant="12" id="QQU-H5-1Nr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rvj-kI-6sE" secondAttribute="bottom" id="vFO-lL-4C0"/>
+                                    <constraint firstItem="Rvj-kI-6sE" firstAttribute="leading" secondItem="nls-XG-hmf" secondAttribute="leading" constant="12" id="zDa-wj-1vM"/>
+                                    <constraint firstItem="Rvj-kI-6sE" firstAttribute="top" secondItem="nls-XG-hmf" secondAttribute="top" id="zrD-Cs-vba"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4d-g7-NaF">
+                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcn-9K-iug">
+                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Pcn-9K-iug" secondAttribute="trailing" constant="12" id="UZQ-QV-UCq"/>
+                                    <constraint firstItem="Pcn-9K-iug" firstAttribute="leading" secondItem="Z4d-g7-NaF" secondAttribute="leading" id="WuW-b2-3vt"/>
+                                    <constraint firstItem="Pcn-9K-iug" firstAttribute="top" secondItem="Z4d-g7-NaF" secondAttribute="top" id="gXF-dJ-2yS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88" id="uaL-kF-Uyf"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3aM-Qu-qv3" secondAttribute="trailing" constant="12" id="Cl7-ND-iEg"/>
+                    <constraint firstItem="3aM-Qu-qv3" firstAttribute="top" secondItem="eOO-OT-azp" secondAttribute="top" constant="24" id="QLh-u4-t0D"/>
+                    <constraint firstItem="5pR-kG-prp" firstAttribute="top" secondItem="bgC-pZ-DfM" secondAttribute="bottom" constant="8" id="SI9-gX-gVp"/>
+                    <constraint firstItem="5pR-kG-prp" firstAttribute="leading" secondItem="eOO-OT-azp" secondAttribute="leading" id="aKB-Mh-x0F"/>
+                    <constraint firstAttribute="bottom" secondItem="5pR-kG-prp" secondAttribute="bottom" constant="16" id="eV3-zu-hoX"/>
+                    <constraint firstItem="bgC-pZ-DfM" firstAttribute="top" secondItem="3aM-Qu-qv3" secondAttribute="bottom" constant="4" id="eya-es-o71"/>
+                    <constraint firstItem="bgC-pZ-DfM" firstAttribute="leading" secondItem="3aM-Qu-qv3" secondAttribute="leading" id="mBA-fV-nML"/>
+                    <constraint firstItem="3aM-Qu-qv3" firstAttribute="leading" secondItem="eOO-OT-azp" secondAttribute="leading" constant="12" id="mjZ-eX-VNG"/>
+                    <constraint firstItem="bgC-pZ-DfM" firstAttribute="trailing" secondItem="3aM-Qu-qv3" secondAttribute="trailing" id="p3O-Cs-th6"/>
+                    <constraint firstAttribute="trailing" secondItem="5pR-kG-prp" secondAttribute="trailing" id="yEd-T0-ugb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="3aM-Qu-qv3" id="cas-iw-zT3"/>
+                <outlet property="shortDesLabel" destination="Pcn-9K-iug" id="VLE-uT-hXy"/>
+                <outlet property="technicalImageView" destination="Rvj-kI-6sE" id="AS8-Xq-MtT"/>
+                <outlet property="titleLabel" destination="bgC-pZ-DfM" id="ek5-Qy-FWV"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="157.42128935532236"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="no_image_bg_small" width="166" height="88"/>
+    </resources>
+</document>

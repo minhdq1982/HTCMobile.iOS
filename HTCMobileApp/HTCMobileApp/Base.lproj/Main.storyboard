@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Bold.ttf">
+            <string>HyundaiSansVnHeadOffice-Bold</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Terms Of Use View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="TermsOfUseViewController" id="BYZ-38-t0r" customClass="TermsOfUseViewController" customModule="HTCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OLY-Pu-8ED">
+                                <rect key="frame" x="0.0" y="32" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bgq-xA-it9"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQf-aS-Lph">
+                                <rect key="frame" x="12" y="135" width="351" height="442"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJT-Ij-xTO">
+                                <rect key="frame" x="12" y="135" width="351" height="442"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoP-Vz-Mgy">
+                                <rect key="frame" x="12" y="597" width="351" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gZb-ab-hGG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                <state key="normal" title="Đồng ý">
+                                    <color key="titleColor" red="0.011764705882352941" green="0.16078431372549018" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THOẢ THUẬN NGƯỜI DÙNG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbK-F1-QdR">
+                                <rect key="frame" x="20" y="92" width="335" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1cC-3g-48i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.15686274510000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OLY-Pu-8ED" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="0PE-AH-tC3"/>
+                            <constraint firstItem="WJT-Ij-xTO" firstAttribute="bottom" secondItem="eQf-aS-Lph" secondAttribute="bottom" id="3fg-cz-Nhp"/>
+                            <constraint firstItem="EoP-Vz-Mgy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-12" id="54F-vN-JZr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EoP-Vz-Mgy" secondAttribute="bottom" constant="20" id="7Fb-ye-wSP"/>
+                            <constraint firstItem="OLY-Pu-8ED" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BxI-Lb-Z0i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mbK-F1-QdR" secondAttribute="trailing" constant="20" id="HSx-W9-vdJ"/>
+                            <constraint firstItem="eQf-aS-Lph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="OJ8-32-8Ml"/>
+                            <constraint firstItem="mbK-F1-QdR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SM2-u6-qMf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eQf-aS-Lph" secondAttribute="trailing" constant="12" id="aHO-jf-zXA"/>
+                            <constraint firstItem="WJT-Ij-xTO" firstAttribute="trailing" secondItem="eQf-aS-Lph" secondAttribute="trailing" id="gjc-nT-geK"/>
+                            <constraint firstItem="mbK-F1-QdR" firstAttribute="top" secondItem="OLY-Pu-8ED" secondAttribute="bottom" constant="30" id="ln8-N8-K6G"/>
+                            <constraint firstItem="EoP-Vz-Mgy" firstAttribute="top" secondItem="eQf-aS-Lph" secondAttribute="bottom" constant="20" id="lrP-Kp-lj8"/>
+                            <constraint firstItem="WJT-Ij-xTO" firstAttribute="leading" secondItem="eQf-aS-Lph" secondAttribute="leading" id="mKT-lA-yHN"/>
+                            <constraint firstItem="eQf-aS-Lph" firstAttribute="top" secondItem="mbK-F1-QdR" secondAttribute="bottom" constant="22" id="mqb-5T-9Xo"/>
+                            <constraint firstItem="OLY-Pu-8ED" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uN2-Gx-7HM"/>
+                            <constraint firstItem="EoP-Vz-Mgy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="uYq-jc-10E"/>
+                            <constraint firstItem="WJT-Ij-xTO" firstAttribute="top" secondItem="eQf-aS-Lph" secondAttribute="top" id="vRy-pU-Pqr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="agreeButton" destination="EoP-Vz-Mgy" id="yJL-uW-hst"/>
+                        <outlet property="webView" destination="WJT-Ij-xTO" id="apj-Ag-s2Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+        <!--Common Alert View-->
+        <scene sceneID="ewd-0l-fRz">
+            <objects>
+                <viewController storyboardIdentifier="CommonAlertView" id="O0B-X7-1iP" customClass="CommonAlertView" customModule="HTCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0t0-fS-IOk"/>
+                        <viewControllerLayoutGuide type="bottom" id="xQS-ud-Nb8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lVR-15-kIy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDv-CC-7hZ">
+                                <rect key="frame" x="12" y="258.5" width="351" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkI-Ed-Dgt">
+                                        <rect key="frame" x="16" y="8" width="319" height="68"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lj-JX-2AV" customClass="CustomButton" customModule="HTCMobile" customModuleProvider="target">
+                                        <rect key="frame" x="117" y="88" width="117" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="pDJ-BA-9GV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                        <state key="normal" title="Đóng"/>
+                                        <connections>
+                                            <action selector="onDismiss:" destination="O0B-X7-1iP" eventType="touchUpInside" id="Ihv-Nl-4Hb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VkI-Ed-Dgt" firstAttribute="leading" secondItem="KDv-CC-7hZ" secondAttribute="leading" constant="16" id="G1o-tm-Mup"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Lj-JX-2AV" secondAttribute="bottom" constant="16" id="H5i-Jb-PW8"/>
+                                    <constraint firstItem="9Lj-JX-2AV" firstAttribute="top" secondItem="VkI-Ed-Dgt" secondAttribute="bottom" constant="12" id="Ik2-0B-HMO"/>
+                                    <constraint firstItem="9Lj-JX-2AV" firstAttribute="centerX" secondItem="KDv-CC-7hZ" secondAttribute="centerX" id="LFU-Fl-Ro7"/>
+                                    <constraint firstAttribute="height" constant="150" id="LFz-Kv-M0r"/>
+                                    <constraint firstItem="9Lj-JX-2AV" firstAttribute="width" secondItem="KDv-CC-7hZ" secondAttribute="width" multiplier="1/3" id="l5J-kC-AGS"/>
+                                    <constraint firstAttribute="trailing" secondItem="VkI-Ed-Dgt" secondAttribute="trailing" constant="16" id="lOX-Hg-iQk"/>
+                                    <constraint firstItem="VkI-Ed-Dgt" firstAttribute="top" secondItem="KDv-CC-7hZ" secondAttribute="top" constant="8" id="ufi-cY-d93"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KDv-CC-7hZ" firstAttribute="leading" secondItem="JzY-Od-7Zc" secondAttribute="leading" constant="12" id="2ya-9p-M8o"/>
+                            <constraint firstItem="KDv-CC-7hZ" firstAttribute="centerY" secondItem="lVR-15-kIy" secondAttribute="centerY" id="Epo-U1-L1F"/>
+                            <constraint firstItem="JzY-Od-7Zc" firstAttribute="trailing" secondItem="KDv-CC-7hZ" secondAttribute="trailing" constant="12" id="H3H-iP-Jip"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JzY-Od-7Zc"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="KDv-CC-7hZ" id="3kt-gU-lqg"/>
+                        <outlet property="messageLabel" destination="VkI-Ed-Dgt" id="ws4-u5-ETc"/>
+                        <outlet property="okButton" destination="9Lj-JX-2AV" id="bYi-iw-E7N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dU6-86-yDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125" y="139.43661971830986"/>
+        </scene>
+        <!--Confirm Alert View-->
+        <scene sceneID="IJM-ir-pMy">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmAlertView" id="5ru-T0-3hQ" customClass="ConfirmAlertView" customModule="HTCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oXl-Im-thr"/>
+                        <viewControllerLayoutGuide type="bottom" id="fBe-qr-mFN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cVc-gV-Im4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFE-oy-n7Z">
+                                <rect key="frame" x="12" y="258.5" width="351" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwF-hJ-JRE">
+                                        <rect key="frame" x="16" y="8" width="319" height="70"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hic-nu-9DT" userLabel="LeftView">
+                                        <rect key="frame" x="0.0" y="90" width="175.5" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sm-dV-aYX" userLabel="CancelButton" customClass="CustomButton" customModule="HTCMobile" customModuleProvider="target">
+                                                <rect key="frame" x="29.5" y="0.0" width="117" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="2p0-91-0ek"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                                <state key="normal" title="Huỷ"/>
+                                                <connections>
+                                                    <action selector="onDismiss:" destination="5ru-T0-3hQ" eventType="touchUpInside" id="5ny-py-0tX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="3sm-dV-aYX" firstAttribute="centerX" secondItem="hic-nu-9DT" secondAttribute="centerX" id="2Kv-2g-3MX"/>
+                                            <constraint firstAttribute="height" constant="44" id="8Ys-U5-B4G"/>
+                                            <constraint firstItem="3sm-dV-aYX" firstAttribute="centerY" secondItem="hic-nu-9DT" secondAttribute="centerY" id="gg1-eB-sWM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtP-GA-UMx" userLabel="RightView">
+                                        <rect key="frame" x="175.5" y="90" width="175.5" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aa-Fe-vhF" userLabel="OKButton" customClass="CustomButton" customModule="HTCMobile" customModuleProvider="target">
+                                                <rect key="frame" x="29.5" y="0.0" width="117" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="RBW-xy-u1A"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                                <state key="normal" title="Đồng ý"/>
+                                                <connections>
+                                                    <action selector="onOK:" destination="5ru-T0-3hQ" eventType="touchUpInside" id="4DY-qk-GRB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="3aa-Fe-vhF" firstAttribute="centerX" secondItem="jtP-GA-UMx" secondAttribute="centerX" id="5fZ-N9-NLe"/>
+                                            <constraint firstAttribute="height" constant="44" id="aZH-iC-XoG"/>
+                                            <constraint firstItem="3aa-Fe-vhF" firstAttribute="centerY" secondItem="jtP-GA-UMx" secondAttribute="centerY" id="xTR-oY-ZWP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hic-nu-9DT" firstAttribute="width" secondItem="BFE-oy-n7Z" secondAttribute="width" multiplier="1/2" id="7gt-Q8-nFL"/>
+                                    <constraint firstItem="MwF-hJ-JRE" firstAttribute="leading" secondItem="BFE-oy-n7Z" secondAttribute="leading" constant="16" id="H7a-YZ-ZBR"/>
+                                    <constraint firstItem="jtP-GA-UMx" firstAttribute="width" secondItem="BFE-oy-n7Z" secondAttribute="width" multiplier="1/2" id="HlW-5h-Xbq"/>
+                                    <constraint firstAttribute="bottom" secondItem="jtP-GA-UMx" secondAttribute="bottom" constant="16" id="Q0X-B2-TNH"/>
+                                    <constraint firstAttribute="height" constant="150" id="QUY-Mo-1yJ"/>
+                                    <constraint firstItem="3sm-dV-aYX" firstAttribute="width" secondItem="BFE-oy-n7Z" secondAttribute="width" multiplier="1/3" id="QVC-hn-s3D"/>
+                                    <constraint firstItem="MwF-hJ-JRE" firstAttribute="top" secondItem="BFE-oy-n7Z" secondAttribute="top" constant="8" id="UPl-Yt-925"/>
+                                    <constraint firstItem="hic-nu-9DT" firstAttribute="leading" secondItem="BFE-oy-n7Z" secondAttribute="leading" id="ahD-5f-x24"/>
+                                    <constraint firstItem="hic-nu-9DT" firstAttribute="top" secondItem="MwF-hJ-JRE" secondAttribute="bottom" constant="12" id="bTW-Vy-ovs"/>
+                                    <constraint firstAttribute="bottom" secondItem="hic-nu-9DT" secondAttribute="bottom" constant="16" id="cii-Uc-OYh"/>
+                                    <constraint firstAttribute="trailing" secondItem="jtP-GA-UMx" secondAttribute="trailing" id="gp3-B6-KNm"/>
+                                    <constraint firstItem="3aa-Fe-vhF" firstAttribute="width" secondItem="BFE-oy-n7Z" secondAttribute="width" multiplier="1/3" id="oqb-Vp-VMg"/>
+                                    <constraint firstAttribute="trailing" secondItem="MwF-hJ-JRE" secondAttribute="trailing" constant="16" id="wfe-1P-Okm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eks-Tx-nKG" firstAttribute="trailing" secondItem="BFE-oy-n7Z" secondAttribute="trailing" constant="12" id="6hX-8I-Ks9"/>
+                            <constraint firstItem="BFE-oy-n7Z" firstAttribute="leading" secondItem="eks-Tx-nKG" secondAttribute="leading" constant="12" id="dAF-B3-f2o"/>
+                            <constraint firstItem="BFE-oy-n7Z" firstAttribute="centerY" secondItem="cVc-gV-Im4" secondAttribute="centerY" id="iQe-4J-Vy9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eks-Tx-nKG"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="BFE-oy-n7Z" id="5HX-c7-emz"/>
+                        <outlet property="cancelButton" destination="3sm-dV-aYX" id="qT4-iP-emN"/>
+                        <outlet property="messageLabel" destination="MwF-hJ-JRE" id="eNk-l9-GtK"/>
+                        <outlet property="okButton" destination="3aa-Fe-vhF" id="1vE-CN-0f1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJW-14-m79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="230" height="50"/>
+    </resources>
+</document>

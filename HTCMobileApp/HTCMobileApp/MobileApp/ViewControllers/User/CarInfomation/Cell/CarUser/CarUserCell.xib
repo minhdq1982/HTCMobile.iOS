@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarUserCell" rowHeight="162" id="KGk-i7-Jjw" customClass="CarUserCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car1" translatesAutoresizingMaskIntoConstraints="NO" id="bcN-ja-qYa">
+                        <rect key="frame" x="152" y="40" width="168" height="91"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="91" id="2yB-80-AUa"/>
+                            <constraint firstAttribute="width" constant="168" id="IUI-bM-p2e"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30E - 77778" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPZ-Bo-tyc">
+                        <rect key="frame" x="0.0" y="83.5" width="152" height="19"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grand i10 2017" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfP-kN-nAK">
+                        <rect key="frame" x="0.0" y="50" width="152" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REj-My-1Dl" userLabel="Delete Car Button">
+                        <rect key="frame" x="296" y="16" width="24" height="24"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="BI1-hz-yUQ"/>
+                            <constraint firstAttribute="width" constant="24" id="cjU-Bc-fA8"/>
+                        </constraints>
+                        <state key="normal" image="user_close_car">
+                            <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="tapDeleteCarAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="j9v-9R-K4m"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyundai Giai Phong" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmc-EK-x4f">
+                        <rect key="frame" x="0.0" y="106.5" width="152" height="19"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZPZ-Bo-tyc" firstAttribute="leading" secondItem="XfP-kN-nAK" secondAttribute="leading" id="2AA-T3-xxm"/>
+                    <constraint firstItem="bcN-ja-qYa" firstAttribute="leading" secondItem="XfP-kN-nAK" secondAttribute="trailing" id="319-cn-T7r"/>
+                    <constraint firstItem="bcN-ja-qYa" firstAttribute="top" secondItem="REj-My-1Dl" secondAttribute="bottom" id="8T0-oQ-Fm8"/>
+                    <constraint firstItem="cmc-EK-x4f" firstAttribute="top" secondItem="ZPZ-Bo-tyc" secondAttribute="bottom" constant="4" id="Dph-Lc-cTf"/>
+                    <constraint firstItem="REj-My-1Dl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="I4T-xL-nyw"/>
+                    <constraint firstItem="bcN-ja-qYa" firstAttribute="trailing" secondItem="REj-My-1Dl" secondAttribute="trailing" id="OAa-KD-vBs"/>
+                    <constraint firstItem="XfP-kN-nAK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SPS-OC-s4F"/>
+                    <constraint firstItem="ZPZ-Bo-tyc" firstAttribute="top" secondItem="XfP-kN-nAK" secondAttribute="bottom" constant="12" id="Zvf-di-yY5"/>
+                    <constraint firstItem="ZPZ-Bo-tyc" firstAttribute="trailing" secondItem="XfP-kN-nAK" secondAttribute="trailing" id="f4t-L4-ExO"/>
+                    <constraint firstItem="cmc-EK-x4f" firstAttribute="leading" secondItem="ZPZ-Bo-tyc" secondAttribute="leading" id="lnz-dW-yQ5"/>
+                    <constraint firstItem="cmc-EK-x4f" firstAttribute="trailing" secondItem="XfP-kN-nAK" secondAttribute="trailing" id="mRi-0E-4fv"/>
+                    <constraint firstAttribute="trailing" secondItem="REj-My-1Dl" secondAttribute="trailing" id="n2Y-U5-WXb"/>
+                    <constraint firstItem="XfP-kN-nAK" firstAttribute="top" secondItem="bcN-ja-qYa" secondAttribute="top" constant="10" id="sB2-jf-soe"/>
+                    <constraint firstAttribute="bottom" secondItem="cmc-EK-x4f" secondAttribute="bottom" constant="34" id="stC-R3-Ehy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="carLicensePlateLabel" destination="ZPZ-Bo-tyc" id="jb5-xF-GfD"/>
+                <outlet property="carNameLabel" destination="XfP-kN-nAK" id="gBv-lt-fOF"/>
+                <outlet property="carVINNOLabel" destination="cmc-EK-x4f" id="JVn-eX-2Zl"/>
+                <outlet property="deleteCarButton" destination="REj-My-1Dl" id="f6g-sb-hwO"/>
+                <outlet property="imageTypeCar" destination="bcN-ja-qYa" id="u1J-bO-y3m"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="129.53523238380811"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="car1" width="504" height="273"/>
+        <image name="user_close_car" width="24" height="24"/>
+    </resources>
+</document>

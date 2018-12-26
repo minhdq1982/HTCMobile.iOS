@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Bold.ttf">
+            <string>HyundaiSansVnHeadOffice-Bold</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="blX-6v-dv0">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="fn5-qR-jhs" userLabel="Login View Controller" customClass="LoginViewController" customModule="HTCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A08-hz-1ab">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="46w-FI-ZKH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEF-1S-w6z" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-hr-Fdf" userLabel="BackButton">
+                                        <rect key="frame" x="10" y="13" width="24" height="24"/>
+                                        <state key="normal" image="icon_back"/>
+                                        <connections>
+                                            <action selector="tapBackAction:" destination="fn5-qR-jhs" eventType="touchUpInside" id="D85-JZ-EfF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aut-EG-3hn" userLabel="TitleLabel">
+                                        <rect key="frame" x="187.5" y="25" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7oM-uB-CKY"/>
+                                    <constraint firstItem="aut-EG-3hn" firstAttribute="centerY" secondItem="eEF-1S-w6z" secondAttribute="centerY" id="W1y-vz-73C"/>
+                                    <constraint firstItem="sHm-hr-Fdf" firstAttribute="centerY" secondItem="eEF-1S-w6z" secondAttribute="centerY" id="WTS-Hr-2k5"/>
+                                    <constraint firstItem="sHm-hr-Fdf" firstAttribute="leading" secondItem="eEF-1S-w6z" secondAttribute="leading" constant="10" id="gsd-zE-9MA"/>
+                                    <constraint firstItem="aut-EG-3hn" firstAttribute="centerX" secondItem="eEF-1S-w6z" secondAttribute="centerX" id="rOh-jM-5aF"/>
+                                </constraints>
+                            </view>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ji-vd-fGX">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6aH-g1-mIr" customClass="LoginTextField" customModule="HTCMobile" customModuleProvider="target">
+                                        <rect key="frame" x="47" y="143" width="281" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Uzo-Zj-hM5"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbF-BB-gMP" userLabel="LineView">
+                                        <rect key="frame" x="47" y="193" width="281" height="1"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Ma5-L2-DoL"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bO9-Pc-jGp">
+                                        <rect key="frame" x="47" y="225" width="281" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="K3B-mm-3G1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                        <state key="normal" title="Đăng nhập">
+                                            <color key="titleColor" red="0.031372549019607843" green="0.1803921568627451" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sau khi đăng nhập, bạn sẽ có thể sử dụng những công cụ hỗ trợ dành cho thành viên Hyundai." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHm-PD-QEj">
+                                        <rect key="frame" x="24" y="47" width="327" height="56"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hHm-PD-QEj" secondAttribute="trailing" constant="24" id="0ef-c2-OUp"/>
+                                    <constraint firstItem="6aH-g1-mIr" firstAttribute="top" secondItem="hHm-PD-QEj" secondAttribute="bottom" constant="40" id="DDO-lb-Yxs"/>
+                                    <constraint firstItem="bO9-Pc-jGp" firstAttribute="top" secondItem="6aH-g1-mIr" secondAttribute="bottom" constant="32" id="GDn-Cd-kgD"/>
+                                    <constraint firstItem="FbF-BB-gMP" firstAttribute="top" secondItem="6aH-g1-mIr" secondAttribute="bottom" id="XMU-Qg-3W5"/>
+                                    <constraint firstItem="FbF-BB-gMP" firstAttribute="trailing" secondItem="6aH-g1-mIr" secondAttribute="trailing" id="buN-hT-rYQ"/>
+                                    <constraint firstItem="bO9-Pc-jGp" firstAttribute="trailing" secondItem="6aH-g1-mIr" secondAttribute="trailing" id="eGI-b9-IFh"/>
+                                    <constraint firstItem="FbF-BB-gMP" firstAttribute="leading" secondItem="6aH-g1-mIr" secondAttribute="leading" id="mj7-5f-2kT"/>
+                                    <constraint firstAttribute="trailing" secondItem="6aH-g1-mIr" secondAttribute="trailing" constant="47" id="mvg-jw-Enb"/>
+                                    <constraint firstItem="hHm-PD-QEj" firstAttribute="leading" secondItem="2ji-vd-fGX" secondAttribute="leading" constant="24" id="nhr-bD-P6D"/>
+                                    <constraint firstItem="bO9-Pc-jGp" firstAttribute="leading" secondItem="6aH-g1-mIr" secondAttribute="leading" id="wmD-XW-Aus"/>
+                                    <constraint firstItem="6aH-g1-mIr" firstAttribute="leading" secondItem="2ji-vd-fGX" secondAttribute="leading" constant="47" id="xEo-WF-3cz"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-2" translatesAutoresizingMaskIntoConstraints="NO" id="foQ-oL-HxF">
+                                <rect key="frame" x="59" y="226" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="NMx-f4-KaS"/>
+                                    <constraint firstAttribute="width" constant="24" id="yeq-2H-6mY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.031372549019607843" green="0.1803921568627451" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="foQ-oL-HxF" firstAttribute="centerY" secondItem="6aH-g1-mIr" secondAttribute="centerY" id="3SJ-oY-5Ba"/>
+                            <constraint firstItem="6aH-g1-mIr" firstAttribute="leading" secondItem="foQ-oL-HxF" secondAttribute="trailing" constant="-36" id="541-op-PyD"/>
+                            <constraint firstItem="2ji-vd-fGX" firstAttribute="trailing" secondItem="4IE-LF-F5g" secondAttribute="trailing" id="5XB-4e-SfF"/>
+                            <constraint firstItem="2ji-vd-fGX" firstAttribute="top" secondItem="eEF-1S-w6z" secondAttribute="bottom" id="6et-aZ-dBE"/>
+                            <constraint firstItem="eEF-1S-w6z" firstAttribute="top" secondItem="4IE-LF-F5g" secondAttribute="top" id="Bws-h2-1BJ"/>
+                            <constraint firstItem="46w-FI-ZKH" firstAttribute="top" secondItem="A08-hz-1ab" secondAttribute="top" id="GP6-xo-xgd"/>
+                            <constraint firstItem="eEF-1S-w6z" firstAttribute="leading" secondItem="4IE-LF-F5g" secondAttribute="leading" id="RER-Ks-C5g"/>
+                            <constraint firstItem="4IE-LF-F5g" firstAttribute="leading" secondItem="2ji-vd-fGX" secondAttribute="leading" id="RGs-SA-Qjm"/>
+                            <constraint firstItem="4IE-LF-F5g" firstAttribute="bottom" secondItem="2ji-vd-fGX" secondAttribute="bottom" id="TOY-VB-Udx"/>
+                            <constraint firstItem="hHm-PD-QEj" firstAttribute="top" secondItem="eEF-1S-w6z" secondAttribute="bottom" constant="47" id="Z3e-yH-kcC"/>
+                            <constraint firstAttribute="bottom" secondItem="46w-FI-ZKH" secondAttribute="bottom" id="cdC-wF-5j1"/>
+                            <constraint firstItem="4IE-LF-F5g" firstAttribute="trailing" secondItem="46w-FI-ZKH" secondAttribute="trailing" id="eEl-S8-Uvd"/>
+                            <constraint firstItem="eEF-1S-w6z" firstAttribute="trailing" secondItem="4IE-LF-F5g" secondAttribute="trailing" id="fuU-EU-piM"/>
+                            <constraint firstItem="46w-FI-ZKH" firstAttribute="leading" secondItem="4IE-LF-F5g" secondAttribute="leading" id="mLy-9l-Fxi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4IE-LF-F5g"/>
+                    </view>
+                    <connections>
+                        <outlet property="headerTitle" destination="aut-EG-3hn" id="8iZ-zw-ELD"/>
+                        <outlet property="headerView" destination="eEF-1S-w6z" id="OZ1-Gd-7np"/>
+                        <outlet property="loginButton" destination="bO9-Pc-jGp" id="ZCa-nW-ciu"/>
+                        <outlet property="noteLabel" destination="hHm-PD-QEj" id="gEc-Bc-hlY"/>
+                        <outlet property="phoneNumberTextField" destination="6aH-g1-mIr" id="urB-8z-EdB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsE-4F-s4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="65.217391304347828"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="519"/>
+        <image name="icon_back" width="24" height="24"/>
+        <image name="phone-2" width="24" height="24"/>
+    </resources>
+</document>

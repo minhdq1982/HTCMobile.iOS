@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpinnerCell" rowHeight="75" id="KGk-i7-Jjw" customClass="SpinnerCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên của đại lý đó" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMt-Km-3Zm">
+                        <rect key="frame" x="0.0" y="8" width="320" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nS-lp-M6s">
+                        <rect key="frame" x="0.0" y="31.5" width="320" height="35"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="kfI-IC-n4d"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="017-Ob-S0h">
+                        <rect key="frame" x="296" y="37" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="8aE-89-PUU"/>
+                            <constraint firstAttribute="width" constant="24" id="Szi-X2-nj5"/>
+                        </constraints>
+                        <state key="normal" image="triangle_survey"/>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập thông tin" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="myF-HZ-CSX">
+                        <rect key="frame" x="20" y="31.5" width="300" height="35"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glt-mh-gHH" userLabel="Select Button">
+                        <rect key="frame" x="0.0" y="31.5" width="320" height="35"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="1nS-lp-M6s" firstAttribute="trailing" secondItem="mMt-Km-3Zm" secondAttribute="trailing" id="15u-0O-zwK"/>
+                    <constraint firstItem="myF-HZ-CSX" firstAttribute="bottom" secondItem="1nS-lp-M6s" secondAttribute="bottom" id="3ng-N3-CFd"/>
+                    <constraint firstItem="017-Ob-S0h" firstAttribute="centerY" secondItem="1nS-lp-M6s" secondAttribute="centerY" id="BH0-eL-G2o"/>
+                    <constraint firstItem="1nS-lp-M6s" firstAttribute="leading" secondItem="mMt-Km-3Zm" secondAttribute="leading" id="BQz-CQ-qIJ"/>
+                    <constraint firstAttribute="bottom" secondItem="1nS-lp-M6s" secondAttribute="bottom" constant="8" id="HcR-Wf-BeU"/>
+                    <constraint firstItem="myF-HZ-CSX" firstAttribute="height" secondItem="1nS-lp-M6s" secondAttribute="height" id="IqM-kc-jcs"/>
+                    <constraint firstItem="glt-mh-gHH" firstAttribute="leading" secondItem="1nS-lp-M6s" secondAttribute="leading" id="SF1-C9-WsL"/>
+                    <constraint firstItem="myF-HZ-CSX" firstAttribute="trailing" secondItem="1nS-lp-M6s" secondAttribute="trailing" id="VmA-g9-dxx"/>
+                    <constraint firstItem="1nS-lp-M6s" firstAttribute="top" secondItem="mMt-Km-3Zm" secondAttribute="bottom" constant="8" id="Vve-fR-Q3V"/>
+                    <constraint firstItem="glt-mh-gHH" firstAttribute="bottom" secondItem="1nS-lp-M6s" secondAttribute="bottom" id="Zui-vr-8uY"/>
+                    <constraint firstItem="mMt-Km-3Zm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hEG-6a-DPg"/>
+                    <constraint firstItem="glt-mh-gHH" firstAttribute="trailing" secondItem="1nS-lp-M6s" secondAttribute="trailing" id="hP8-dr-qA1"/>
+                    <constraint firstItem="glt-mh-gHH" firstAttribute="height" secondItem="1nS-lp-M6s" secondAttribute="height" id="pl3-HB-Y4m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="017-Ob-S0h" secondAttribute="trailing" id="DNk-YC-ezv"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="mMt-Km-3Zm" secondAttribute="trailing" id="VLV-5j-GFa"/>
+                <constraint firstItem="mMt-Km-3Zm" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="Xqs-oa-Fbp"/>
+                <constraint firstItem="myF-HZ-CSX" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="20" id="bQY-zB-g36"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="answerTextField" destination="myF-HZ-CSX" id="CIx-Vv-V6I"/>
+                <outlet property="borderView" destination="1nS-lp-M6s" id="77T-YV-6rl"/>
+                <outlet property="dropDownButton" destination="glt-mh-gHH" id="9ok-xf-38D"/>
+                <outlet property="questionLabel" destination="mMt-Km-3Zm" id="OMZ-rP-MIr"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="46.326836581709152"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="triangle_survey" width="24" height="24"/>
+    </resources>
+</document>

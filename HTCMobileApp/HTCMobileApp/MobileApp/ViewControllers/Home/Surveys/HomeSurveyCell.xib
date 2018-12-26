@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Bold.ttf">
+            <string>HyundaiSansVnHeadOffice-Bold</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeSurveyCell" rowHeight="122" id="FmO-KY-ZNV" customClass="HomeSurveyCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FmO-KY-ZNV" id="gkd-Mh-ZlE">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="207.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6a-Gz-8Td" customClass="RoundedView" customModule="HTCMobile" customModuleProvider="target">
+                        <rect key="frame" x="12" y="10" width="351" height="188"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KHẢO SÁT MỨC ĐỘ HÀI LÒNG VỀ DỊCH VỤ" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDW-zb-Ytz">
+                                <rect key="frame" x="16" y="18" width="288" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="n3h-90-MHf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giúp Hyundai Thành Công  phục vụ quý khách ngày một tốt hơn" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuB-ov-EdA">
+                                <rect key="frame" x="16" y="81" width="255" height="30"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxn-t6-1dI">
+                                <rect key="frame" x="16" y="124" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.72941176470588232" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0eh-xG-E1i"/>
+                                    <constraint firstAttribute="width" constant="150" id="S1q-z8-TwF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="14"/>
+                                <state key="normal" title="LÀM KHẢO SÁT"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZm-42-jjg" userLabel="giftView">
+                                <rect key="frame" x="156" y="7" width="205" height="205"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dZm-42-jjg" secondAttribute="height" multiplier="1:1" id="Wex-so-Vyi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.76862745098039209" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dZm-42-jjg" firstAttribute="leading" secondItem="Wxn-t6-1dI" secondAttribute="trailing" constant="-10" id="2UL-qc-W8C"/>
+                            <constraint firstItem="WDW-zb-Ytz" firstAttribute="top" secondItem="x6a-Gz-8Td" secondAttribute="top" constant="18" id="5sM-RY-2hM"/>
+                            <constraint firstItem="WDW-zb-Ytz" firstAttribute="leading" secondItem="x6a-Gz-8Td" secondAttribute="leading" constant="16" id="7hw-s2-MOk"/>
+                            <constraint firstAttribute="trailing" secondItem="iuB-ov-EdA" secondAttribute="trailing" constant="80" id="D58-ot-R7b"/>
+                            <constraint firstAttribute="bottom" secondItem="Wxn-t6-1dI" secondAttribute="bottom" constant="24" id="DYB-OU-E5E"/>
+                            <constraint firstAttribute="trailing" secondItem="dZm-42-jjg" secondAttribute="trailing" constant="-10" id="btl-B7-NKu"/>
+                            <constraint firstItem="iuB-ov-EdA" firstAttribute="leading" secondItem="WDW-zb-Ytz" secondAttribute="leading" id="dMa-Ac-Jkx"/>
+                            <constraint firstItem="Wxn-t6-1dI" firstAttribute="leading" secondItem="iuB-ov-EdA" secondAttribute="leading" id="eBM-K6-YVK"/>
+                            <constraint firstAttribute="bottom" secondItem="dZm-42-jjg" secondAttribute="bottom" constant="-24" id="imo-U7-YyX"/>
+                            <constraint firstAttribute="height" constant="188" id="sQ6-7E-yvK"/>
+                            <constraint firstItem="iuB-ov-EdA" firstAttribute="top" secondItem="WDW-zb-Ytz" secondAttribute="bottom" constant="16" id="we7-nA-tuR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="x6a-Gz-8Td" secondAttribute="trailing" constant="12" id="Arl-vN-p67"/>
+                    <constraint firstAttribute="bottom" secondItem="x6a-Gz-8Td" secondAttribute="bottom" constant="9.5" id="U0c-of-xD3"/>
+                    <constraint firstItem="x6a-Gz-8Td" firstAttribute="leading" secondItem="gkd-Mh-ZlE" secondAttribute="leading" constant="12" id="naS-SG-1fo"/>
+                    <constraint firstItem="x6a-Gz-8Td" firstAttribute="top" secondItem="gkd-Mh-ZlE" secondAttribute="top" constant="10" id="vsD-Kj-wnX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bgView" destination="x6a-Gz-8Td" id="Kqu-El-RD3"/>
+                <outlet property="desLabel" destination="iuB-ov-EdA" id="koQ-1m-HNq"/>
+                <outlet property="giftBottomContraintLayout" destination="imo-U7-YyX" id="PBH-3a-qF3"/>
+                <outlet property="giftView" destination="dZm-42-jjg" id="8mc-gR-rSo"/>
+                <outlet property="makeSurveyButton" destination="Wxn-t6-1dI" id="NvJ-cb-UeJ"/>
+                <outlet property="titleLabel" destination="WDW-zb-Ytz" id="0te-Ys-6R8"/>
+            </connections>
+            <point key="canvasLocation" x="120.8" y="74.662668665667169"/>
+        </tableViewCell>
+    </objects>
+</document>

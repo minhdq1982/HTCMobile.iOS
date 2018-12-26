@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TechnicalGuidanceCell" rowHeight="296" id="D9M-gS-FHq" customClass="TechnicalGuidanceCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="294"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D9M-gS-FHq" id="5WC-Nl-8gd">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="293.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image_bg_big" translatesAutoresizingMaskIntoConstraints="NO" id="GE4-0o-HhX">
+                        <rect key="frame" x="12" y="10" width="351" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="BSg-6n-r0Q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/06/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGG-yP-0zE">
+                        <rect key="frame" x="12" y="198" width="351" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="K7T-i6-Vdu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-Y6-otH">
+                        <rect key="frame" x="12" y="260" width="351" height="19"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJg-5y-LJh">
+                        <rect key="frame" x="12" y="227" width="351" height="25"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="20"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XJg-5y-LJh" firstAttribute="leading" secondItem="GE4-0o-HhX" secondAttribute="leading" id="32n-my-bdN"/>
+                    <constraint firstItem="XJg-5y-LJh" firstAttribute="trailing" secondItem="GE4-0o-HhX" secondAttribute="trailing" id="JuP-oq-QQG"/>
+                    <constraint firstItem="rGG-yP-0zE" firstAttribute="leading" secondItem="XJg-5y-LJh" secondAttribute="leading" id="LO8-JH-bAT"/>
+                    <constraint firstItem="rGG-yP-0zE" firstAttribute="top" secondItem="GE4-0o-HhX" secondAttribute="bottom" constant="8" id="Qil-o1-rBC"/>
+                    <constraint firstItem="GE4-0o-HhX" firstAttribute="top" secondItem="5WC-Nl-8gd" secondAttribute="top" constant="10" id="Tl3-X9-Y8w"/>
+                    <constraint firstAttribute="trailing" secondItem="GE4-0o-HhX" secondAttribute="trailing" constant="12" id="a9w-I3-GCM"/>
+                    <constraint firstItem="tb2-Y6-otH" firstAttribute="leading" secondItem="rGG-yP-0zE" secondAttribute="leading" id="aMs-tl-rWh"/>
+                    <constraint firstItem="tb2-Y6-otH" firstAttribute="trailing" secondItem="rGG-yP-0zE" secondAttribute="trailing" id="cgh-Qb-bAw"/>
+                    <constraint firstItem="XJg-5y-LJh" firstAttribute="top" secondItem="rGG-yP-0zE" secondAttribute="bottom" constant="8" id="el1-xh-EFQ"/>
+                    <constraint firstItem="rGG-yP-0zE" firstAttribute="trailing" secondItem="XJg-5y-LJh" secondAttribute="trailing" id="han-QS-nnm"/>
+                    <constraint firstItem="tb2-Y6-otH" firstAttribute="top" secondItem="XJg-5y-LJh" secondAttribute="bottom" constant="8" id="rIv-96-HAh"/>
+                    <constraint firstAttribute="bottom" secondItem="tb2-Y6-otH" secondAttribute="bottom" constant="14.5" id="zbL-cM-4de"/>
+                    <constraint firstItem="GE4-0o-HhX" firstAttribute="leading" secondItem="5WC-Nl-8gd" secondAttribute="leading" constant="12" id="zkX-ZC-oO0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="rGG-yP-0zE" id="956-D3-IFl"/>
+                <outlet property="shortDesLabel" destination="tb2-Y6-otH" id="OpQ-4s-DRJ"/>
+                <outlet property="technicalImageView" destination="GE4-0o-HhX" id="nnI-mO-FvT"/>
+                <outlet property="titleLabel" destination="XJg-5y-LJh" id="bud-Wn-aHY"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="161.01949025487258"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="no_image_bg_big" width="351" height="187"/>
+    </resources>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Bold.ttf">
+            <string>HyundaiSansVnHeadOffice-Bold</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeLoginCell" rowHeight="173" id="GsW-Xv-zZY" customClass="HomeLoginCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GsW-Xv-zZY" id="cia-bK-5js">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="224.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Fr-IL-5oJ" userLabel="RequestLoginView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="224.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="6i4-2j-Fjx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="224.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng nhập để tận dụng tất cả những hỗ trợ và ưu đãi dành riêng cho chủ sở hữu xe Hyundai" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsK-ju-DKh">
+                                <rect key="frame" x="12" y="73.5" width="351" height="37.5"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpM-rn-ai1">
+                                <rect key="frame" x="127.5" y="135" width="120" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="JqO-zT-QSV"/>
+                                    <constraint firstAttribute="height" constant="35" id="un3-G1-4UG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="16"/>
+                                <state key="normal" title="Đăng nhập">
+                                    <color key="titleColor" red="0.031372549020000001" green="0.18039215689999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapLoginAction:" destination="GsW-Xv-zZY" eventType="touchUpInside" id="vxn-zx-gd0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzG-Ok-3R8">
+                                <rect key="frame" x="335" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KIg-Zr-jVL"/>
+                                    <constraint firstAttribute="width" constant="40" id="YPx-pt-Qgd"/>
+                                </constraints>
+                                <state key="normal" image="icon_close"/>
+                                <connections>
+                                    <action selector="tapCloseAction:" destination="GsW-Xv-zZY" eventType="touchUpInside" id="r5J-zs-gQU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OzG-Ok-3R8" firstAttribute="top" secondItem="1Fr-IL-5oJ" secondAttribute="top" id="3co-yf-s58"/>
+                            <constraint firstItem="vsK-ju-DKh" firstAttribute="leading" secondItem="1Fr-IL-5oJ" secondAttribute="leading" constant="12" id="GGJ-XO-veI"/>
+                            <constraint firstAttribute="centerY" secondItem="vsK-ju-DKh" secondAttribute="centerY" constant="20" id="Rwc-rg-UKd"/>
+                            <constraint firstAttribute="height" constant="224.5" id="VMB-tJ-mFF"/>
+                            <constraint firstItem="JpM-rn-ai1" firstAttribute="centerX" secondItem="1Fr-IL-5oJ" secondAttribute="centerX" id="Z16-cN-UrP"/>
+                            <constraint firstAttribute="bottom" secondItem="6i4-2j-Fjx" secondAttribute="bottom" id="c1Y-9D-8YZ"/>
+                            <constraint firstItem="JpM-rn-ai1" firstAttribute="top" secondItem="vsK-ju-DKh" secondAttribute="bottom" constant="24" id="oAV-ON-XXh"/>
+                            <constraint firstAttribute="trailing" secondItem="OzG-Ok-3R8" secondAttribute="trailing" id="pAT-gF-2E2"/>
+                            <constraint firstItem="6i4-2j-Fjx" firstAttribute="top" secondItem="1Fr-IL-5oJ" secondAttribute="top" id="reG-6f-CZZ"/>
+                            <constraint firstAttribute="trailing" secondItem="vsK-ju-DKh" secondAttribute="trailing" constant="12" id="skb-xc-ln1"/>
+                            <constraint firstItem="6i4-2j-Fjx" firstAttribute="leading" secondItem="1Fr-IL-5oJ" secondAttribute="leading" id="uCX-MT-d7I"/>
+                            <constraint firstAttribute="trailing" secondItem="6i4-2j-Fjx" secondAttribute="trailing" id="zzQ-dW-aoF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Fr-IL-5oJ" firstAttribute="leading" secondItem="cia-bK-5js" secondAttribute="leading" id="Hsn-Zf-2AY"/>
+                    <constraint firstAttribute="bottom" secondItem="1Fr-IL-5oJ" secondAttribute="bottom" id="QVh-L2-Vlb"/>
+                    <constraint firstAttribute="trailing" secondItem="1Fr-IL-5oJ" secondAttribute="trailing" id="fEc-MX-5z7"/>
+                    <constraint firstItem="1Fr-IL-5oJ" firstAttribute="top" secondItem="cia-bK-5js" secondAttribute="top" id="y2N-Kp-HgK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="closeButton" destination="OzG-Ok-3R8" id="Eee-th-f1U"/>
+                <outlet property="descriptionLabel" destination="vsK-ju-DKh" id="chD-7a-ZzP"/>
+                <outlet property="heightContraint" destination="VMB-tJ-mFF" id="JXd-Ma-kph"/>
+                <outlet property="loginButton" destination="JpM-rn-ai1" id="0gW-64-KEC"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="106.14692653673164"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_login_bg" width="553" height="332"/>
+        <image name="icon_close" width="24" height="24"/>
+    </resources>
+</document>

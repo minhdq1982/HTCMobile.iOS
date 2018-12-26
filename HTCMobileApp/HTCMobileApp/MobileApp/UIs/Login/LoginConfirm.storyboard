@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Bold.ttf">
+            <string>HyundaiSansVnHeadOffice-Bold</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login Confirm View Controller-->
+        <scene sceneID="6cn-Q0-7wC">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmLoginViewController" id="FRT-I2-5dQ" userLabel="Login Confirm View Controller" customClass="ConfirmLoginViewController" customModule="HTCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bYM-dh-ufm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="nJS-W3-97p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAR-wK-pWq" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0E-Bu-O4j">
+                                        <rect key="frame" x="187.5" y="25" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD9-ht-Fv7" userLabel="BackButton">
+                                        <rect key="frame" x="10" y="13" width="24" height="24"/>
+                                        <state key="normal" image="icon_back"/>
+                                        <connections>
+                                            <action selector="tapBackAction:" destination="FRT-I2-5dQ" eventType="touchUpInside" id="M5F-f4-hDX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="X0E-Bu-O4j" firstAttribute="centerY" secondItem="dAR-wK-pWq" secondAttribute="centerY" id="51C-Sp-ZL5"/>
+                                    <constraint firstItem="ZD9-ht-Fv7" firstAttribute="leading" secondItem="dAR-wK-pWq" secondAttribute="leading" constant="10" id="U7I-yu-24v"/>
+                                    <constraint firstAttribute="height" constant="50" id="Wyf-qM-mN6"/>
+                                    <constraint firstItem="ZD9-ht-Fv7" firstAttribute="centerY" secondItem="dAR-wK-pWq" secondAttribute="centerY" id="mnB-HQ-RUn"/>
+                                    <constraint firstItem="X0E-Bu-O4j" firstAttribute="centerX" secondItem="dAR-wK-pWq" secondAttribute="centerX" id="nKD-K5-19Y"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnS-Lr-6D1">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjo-Ow-OLJ">
+                                        <rect key="frame" x="168.5" y="271" width="38.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.66666666666666663" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMO-WQ-2LJ" userLabel="ResendButton">
+                                        <rect key="frame" x="168.5" y="271" width="38.5" height="30"/>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RpP-Vw-uCN" customClass="LoginTextField" customModule="HTCMobile" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="127.5" width="305" height="0.0"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="jcw-xQ-GDj"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gYK-Fq-VB0">
+                                        <rect key="frame" x="35" y="112.5" width="305" height="60"/>
+                                        <subviews>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72c-G7-OEe">
+                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="60"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPh-5a-5TZ">
+                                                        <rect key="frame" x="0.0" y="59" width="70.5" height="1"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="qVL-n8-5ud"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgb-bM-MjP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="60"/>
+                                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="36"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Qgb-bM-MjP" secondAttribute="trailing" id="KXA-zU-rDG"/>
+                                                    <constraint firstItem="tPh-5a-5TZ" firstAttribute="leading" secondItem="72c-G7-OEe" secondAttribute="leading" id="LMb-e7-mdn"/>
+                                                    <constraint firstItem="Qgb-bM-MjP" firstAttribute="leading" secondItem="72c-G7-OEe" secondAttribute="leading" id="lFl-cT-SlC"/>
+                                                    <constraint firstItem="Qgb-bM-MjP" firstAttribute="top" secondItem="72c-G7-OEe" secondAttribute="top" id="o73-Bg-NF0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Qgb-bM-MjP" secondAttribute="bottom" id="qu9-8O-5UX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="tPh-5a-5TZ" secondAttribute="trailing" id="tp9-wd-fyv"/>
+                                                </constraints>
+                                            </view>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPz-gf-u6k">
+                                                <rect key="frame" x="78.5" y="0.0" width="70" height="60"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4x-2E-vea">
+                                                        <rect key="frame" x="0.0" y="59" width="70" height="1"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="AbS-mo-DAd"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhZ-1J-U1I">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
+                                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="36"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="zhZ-1J-U1I" firstAttribute="top" secondItem="oPz-gf-u6k" secondAttribute="top" id="7AF-NT-p52"/>
+                                                    <constraint firstItem="zhZ-1J-U1I" firstAttribute="leading" secondItem="oPz-gf-u6k" secondAttribute="leading" id="b2R-d9-dnF"/>
+                                                    <constraint firstItem="d4x-2E-vea" firstAttribute="leading" secondItem="oPz-gf-u6k" secondAttribute="leading" id="l0b-ff-YfF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zhZ-1J-U1I" secondAttribute="bottom" id="sIr-Vk-efD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="d4x-2E-vea" secondAttribute="trailing" id="sUZ-rV-H6D"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zhZ-1J-U1I" secondAttribute="trailing" id="wZg-HN-oA1"/>
+                                                </constraints>
+                                            </view>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mFg-i0-QrC">
+                                                <rect key="frame" x="156.5" y="0.0" width="70.5" height="60"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFr-Hn-fyF">
+                                                        <rect key="frame" x="0.0" y="59" width="70.5" height="1"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="11e-x8-5iA"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZ1-cM-prb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="60"/>
+                                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="36"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="GZ1-cM-prb" firstAttribute="leading" secondItem="mFg-i0-QrC" secondAttribute="leading" id="5dR-o5-VFn"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GZ1-cM-prb" secondAttribute="bottom" id="K6H-di-tD5"/>
+                                                    <constraint firstItem="PFr-Hn-fyF" firstAttribute="leading" secondItem="mFg-i0-QrC" secondAttribute="leading" id="Sqi-fm-lF8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GZ1-cM-prb" secondAttribute="trailing" id="ZeA-Vh-NMN"/>
+                                                    <constraint firstItem="GZ1-cM-prb" firstAttribute="top" secondItem="mFg-i0-QrC" secondAttribute="top" id="aKK-Yt-VKm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="PFr-Hn-fyF" secondAttribute="trailing" id="onf-Ox-cjl"/>
+                                                </constraints>
+                                            </view>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQL-f8-yBS">
+                                                <rect key="frame" x="235" y="0.0" width="70" height="60"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bpt-As-4xA">
+                                                        <rect key="frame" x="0.0" y="59" width="70" height="1"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="9vu-2f-2eR"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTx-Qf-Y97">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="60"/>
+                                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="36"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="KTx-Qf-Y97" secondAttribute="trailing" id="3vK-8K-rbi"/>
+                                                    <constraint firstItem="Bpt-As-4xA" firstAttribute="leading" secondItem="KQL-f8-yBS" secondAttribute="leading" id="8xG-Zc-O36"/>
+                                                    <constraint firstItem="KTx-Qf-Y97" firstAttribute="leading" secondItem="KQL-f8-yBS" secondAttribute="leading" id="Snl-wz-KME"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Bpt-As-4xA" secondAttribute="trailing" id="f27-RX-bQh"/>
+                                                    <constraint firstItem="KTx-Qf-Y97" firstAttribute="top" secondItem="KQL-f8-yBS" secondAttribute="top" id="m1G-mI-t2z"/>
+                                                    <constraint firstAttribute="bottom" secondItem="KTx-Qf-Y97" secondAttribute="bottom" id="zoO-Eu-xbR"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="BAu-wl-4KH"/>
+                                            <constraint firstAttribute="bottom" secondItem="d4x-2E-vea" secondAttribute="bottom" id="HNG-2B-JMT"/>
+                                            <constraint firstAttribute="bottom" secondItem="tPh-5a-5TZ" secondAttribute="bottom" id="Kjf-6x-ino"/>
+                                            <constraint firstAttribute="bottom" secondItem="Bpt-As-4xA" secondAttribute="bottom" id="PP4-on-abl"/>
+                                            <constraint firstAttribute="bottom" secondItem="PFr-Hn-fyF" secondAttribute="bottom" id="wdF-8z-09T"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29y-pR-AM6">
+                                        <rect key="frame" x="187.5" y="245" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vui lòng điền 6 mã số xác thực đã gửi vào số điện thoại mà bạn vừa đăng nhập" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2O-zR-DGI">
+                                        <rect key="frame" x="35" y="40" width="305" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="RpP-Vw-uCN" firstAttribute="top" secondItem="U2O-zR-DGI" secondAttribute="bottom" constant="50" id="2dJ-qI-wO2"/>
+                                    <constraint firstItem="gYK-Fq-VB0" firstAttribute="leading" secondItem="NnS-Lr-6D1" secondAttribute="leading" constant="35" id="2uz-Vf-OVJ"/>
+                                    <constraint firstItem="Cjo-Ow-OLJ" firstAttribute="bottom" secondItem="dMO-WQ-2LJ" secondAttribute="bottom" id="AuQ-pq-2sV"/>
+                                    <constraint firstItem="29y-pR-AM6" firstAttribute="top" secondItem="gYK-Fq-VB0" secondAttribute="bottom" constant="72.5" id="FGx-JY-tmf"/>
+                                    <constraint firstItem="U2O-zR-DGI" firstAttribute="centerX" secondItem="NnS-Lr-6D1" secondAttribute="centerX" id="GMr-yf-XUa"/>
+                                    <constraint firstItem="29y-pR-AM6" firstAttribute="centerX" secondItem="NnS-Lr-6D1" secondAttribute="centerX" id="SOk-cM-4bG"/>
+                                    <constraint firstItem="RpP-Vw-uCN" firstAttribute="leading" secondItem="NnS-Lr-6D1" secondAttribute="leading" constant="35" id="Ug1-ZG-3Cs"/>
+                                    <constraint firstAttribute="trailing" secondItem="gYK-Fq-VB0" secondAttribute="trailing" constant="35" id="c5R-cb-yHb"/>
+                                    <constraint firstItem="Cjo-Ow-OLJ" firstAttribute="trailing" secondItem="dMO-WQ-2LJ" secondAttribute="trailing" id="k8m-qw-c2k"/>
+                                    <constraint firstItem="Cjo-Ow-OLJ" firstAttribute="top" secondItem="dMO-WQ-2LJ" secondAttribute="top" id="kBK-DH-fnT"/>
+                                    <constraint firstItem="U2O-zR-DGI" firstAttribute="trailing" secondItem="RpP-Vw-uCN" secondAttribute="trailing" id="kwh-Ef-IgF"/>
+                                    <constraint firstItem="gYK-Fq-VB0" firstAttribute="top" secondItem="U2O-zR-DGI" secondAttribute="bottom" constant="35" id="la8-GC-6U7"/>
+                                    <constraint firstAttribute="trailing" secondItem="RpP-Vw-uCN" secondAttribute="trailing" constant="35" id="trJ-1n-lv5"/>
+                                    <constraint firstItem="U2O-zR-DGI" firstAttribute="leading" secondItem="RpP-Vw-uCN" secondAttribute="leading" id="tuL-Gk-9iM"/>
+                                    <constraint firstItem="Cjo-Ow-OLJ" firstAttribute="leading" secondItem="dMO-WQ-2LJ" secondAttribute="leading" id="ufb-aO-XyH"/>
+                                    <constraint firstItem="Cjo-Ow-OLJ" firstAttribute="top" secondItem="29y-pR-AM6" secondAttribute="bottom" constant="26" id="vdZ-Sm-P8Y"/>
+                                    <constraint firstItem="Cjo-Ow-OLJ" firstAttribute="centerX" secondItem="NnS-Lr-6D1" secondAttribute="centerX" id="wnG-ic-H6S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.031372549019607843" green="0.1803921568627451" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NnS-Lr-6D1" firstAttribute="top" secondItem="dAR-wK-pWq" secondAttribute="bottom" id="8O1-H7-Wkw"/>
+                            <constraint firstItem="nJS-W3-97p" firstAttribute="leading" secondItem="PEj-aF-hla" secondAttribute="leading" id="FeT-2J-T3N"/>
+                            <constraint firstItem="PEj-aF-hla" firstAttribute="trailing" secondItem="nJS-W3-97p" secondAttribute="trailing" id="HMW-nl-kMz"/>
+                            <constraint firstItem="dAR-wK-pWq" firstAttribute="leading" secondItem="PEj-aF-hla" secondAttribute="leading" id="UV6-up-u5D"/>
+                            <constraint firstAttribute="trailing" secondItem="NnS-Lr-6D1" secondAttribute="trailing" id="VFv-AD-dSs"/>
+                            <constraint firstItem="dAR-wK-pWq" firstAttribute="top" secondItem="PEj-aF-hla" secondAttribute="top" id="XTe-aU-wgE"/>
+                            <constraint firstItem="NnS-Lr-6D1" firstAttribute="leading" secondItem="bYM-dh-ufm" secondAttribute="leading" id="cDf-Y8-9lF"/>
+                            <constraint firstItem="nJS-W3-97p" firstAttribute="top" secondItem="bYM-dh-ufm" secondAttribute="top" id="dO9-fe-yf6"/>
+                            <constraint firstItem="PEj-aF-hla" firstAttribute="bottom" secondItem="NnS-Lr-6D1" secondAttribute="bottom" id="elC-zY-h4Q"/>
+                            <constraint firstItem="U2O-zR-DGI" firstAttribute="top" secondItem="dAR-wK-pWq" secondAttribute="bottom" constant="40" id="kqO-FW-9WY"/>
+                            <constraint firstItem="PEj-aF-hla" firstAttribute="trailing" secondItem="dAR-wK-pWq" secondAttribute="trailing" id="lRO-OO-4Ip"/>
+                            <constraint firstAttribute="bottom" secondItem="nJS-W3-97p" secondAttribute="bottom" id="lev-04-GWr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PEj-aF-hla"/>
+                    </view>
+                    <connections>
+                        <outlet property="codeTextField" destination="RpP-Vw-uCN" id="gpW-Q7-cLk"/>
+                        <outlet property="expirationCodeLabel" destination="29y-pR-AM6" id="Wh5-HD-oKH"/>
+                        <outlet property="headerTitle" destination="X0E-Bu-O4j" id="0z6-eP-QG2"/>
+                        <outlet property="noteLabel" destination="U2O-zR-DGI" id="EFn-Fb-Mvg"/>
+                        <outlet property="resendCodeButton" destination="dMO-WQ-2LJ" id="acD-rP-SUX"/>
+                        <outlet property="resendCodeLabel" destination="Cjo-Ow-OLJ" id="Ywj-Ur-7sC"/>
+                        <outlet property="stackView" destination="gYK-Fq-VB0" id="Qam-aR-nZK"/>
+                        <outletCollection property="codeLabels" destination="Qgb-bM-MjP" collectionClass="NSMutableArray" id="cuF-T7-jkB"/>
+                        <outletCollection property="codeLabels" destination="zhZ-1J-U1I" collectionClass="NSMutableArray" id="QLe-WK-R0S"/>
+                        <outletCollection property="codeLabels" destination="GZ1-cM-prb" collectionClass="NSMutableArray" id="VDp-5O-xFZ"/>
+                        <outletCollection property="codeLabels" destination="KTx-Qf-Y97" collectionClass="NSMutableArray" id="fP6-5M-gpJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVI-XD-Kpl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="65.217391304347828"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="519"/>
+        <image name="icon_back" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,227 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - Alamofire (4.7.3)
+  - Barcode128View (0.3.2)
+  - Crashlytics (3.11.1):
+    - Fabric (~> 1.8.1)
+  - Differentiator (3.0.2)
+  - DropDown (2.3.2)
+  - EFQRCode (4.3.0)
+  - Fabric (1.8.2)
+  - Firebase/Core (5.13.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.3.0)
+  - Firebase/CoreOnly (5.13.0):
+    - FirebaseCore (= 5.1.8)
+  - FirebaseAnalytics (5.3.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleAppMeasurement (~> 5.3)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.1.8):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.3.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+  - FSCalendar (2.7.9)
+  - FSPagerView (0.7.2)
+  - GoogleAppMeasurement (5.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleMaps (2.5.0):
+    - GoogleMaps/Maps (= 2.5.0)
+  - GoogleMaps/Base (2.5.0)
+  - GoogleMaps/Maps (2.5.0):
+    - GoogleMaps/Base
+  - GoogleUtilities/AppDelegateSwizzler (5.3.6):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.6)
+  - GoogleUtilities/Logger (5.3.6):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.6):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.6):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.6)"
+  - GoogleUtilities/Reachability (5.3.6):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.6):
+    - GoogleUtilities/Logger
+  - IQKeyboardManagerSwift (5.0.8)
+  - Kingfisher (4.9.0)
+  - lottie-ios (2.5.2)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - NVActivityIndicatorView (4.3.0):
+    - NVActivityIndicatorView/Presenter (= 4.3.0)
+  - NVActivityIndicatorView/Presenter (4.3.0)
+  - ObjectMapper (3.3.0)
+  - Pulley (2.6.2)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - RxAlamofire (4.2.0):
+    - RxAlamofire/Core (= 4.2.0)
+  - RxAlamofire/Core (4.2.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
+  - RxAnimated (0.4.1):
+    - RxAnimated/Core (= 0.4.1)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxAnimated/Core (0.4.1):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxCoreLocation (1.3.0):
+    - RxCoreLocation/Core (= 1.3.0)
+  - RxCoreLocation/Core (1.3.0):
+    - RxCocoa (~> 4.2.0)
+    - RxSwift (~> 4.2.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxGesture (1.2.1):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxGoogleMaps (3.0):
+    - GoogleMaps (~> 2.5.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - SideMenu (4.0.0)
+  - SwiftMessages (5.0.1):
+    - SwiftMessages/App (= 5.0.1)
+  - SwiftMessages/App (5.0.1)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 2.3.0)
+  - Alamofire
+  - Barcode128View
+  - Crashlytics
+  - DropDown (~> 2.3.1)
+  - EFQRCode
+  - Fabric
+  - Firebase/Core
+  - FSCalendar
+  - FSPagerView
+  - GoogleMaps (~> 2.5.0)
+  - IQKeyboardManagerSwift (~> 5.0.7)
+  - Kingfisher
+  - lottie-ios
+  - NVActivityIndicatorView
+  - ObjectMapper
+  - Pulley
+  - R.swift
+  - RxAlamofire
+  - RxAnimated
+  - RxCocoa
+  - RxCoreLocation
+  - RxDataSources
+  - RxGesture
+  - RxGoogleMaps
+  - RxSwift
+  - SideMenu
+  - SwiftMessages
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - Alamofire
+    - Barcode128View
+    - Crashlytics
+    - Differentiator
+    - DropDown
+    - EFQRCode
+    - Fabric
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FSCalendar
+    - FSPagerView
+    - GoogleAppMeasurement
+    - GoogleMaps
+    - GoogleUtilities
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - lottie-ios
+    - nanopb
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - Pulley
+    - R.swift
+    - R.swift.Library
+    - RxAlamofire
+    - RxAnimated
+    - RxCocoa
+    - RxCoreLocation
+    - RxDataSources
+    - RxGesture
+    - RxGoogleMaps
+    - RxSwift
+    - SideMenu
+    - SwiftMessages
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Barcode128View: b930208b959fa0421ce2ded3c487303ec902e625
+  Crashlytics: ca7ab4bc304aa216bdc2e4c1a96389ee77252203
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
+  EFQRCode: 51b67bd10952da9ef619ae0a396abb746b94263f
+  Fabric: d2b22f443ba195d8a7cc204da230977c72733b40
+  Firebase: 6df9a6114bc9f106a98fe83d5438d4d9833c2019
+  FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
+  FirebaseCore: fba2bfaa691c49028309b92e4dd37cc4b5512fbe
+  FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+  FSPagerView: 7515f63c424da71623d299d4fbbfb3dd884642ff
+  GoogleAppMeasurement: 5029d78f2b438bd30ffb44e6c558b57c21622727
+  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
+  GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  Kingfisher: 64539b51826b778206daa6ed815d12653caa69dd
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  Pulley: 2679a2b5a9714c5eb760b1fbb535d15c60e50fb4
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  RxAlamofire: 87a9c588541210cc3e4a1f843ccc3ecf3eb98b31
+  RxAnimated: 8b3142830a60840ebed5755d33b9c88ad5a1647c
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxCoreLocation: f65296c805cf7782cb219f6947289d6eb3076d32
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxGesture: c278eb05b187abd47e11e65464ae4de53ab71d95
+  RxGoogleMaps: 32e37d5e8304e656d3dbee0e8247700f3f736c47
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
+  SwiftMessages: 32ce3cfc8388b41aae56ff4853cc752a20101147
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 4e1b1c3a4f21a172534acfb9d810ae687af10801
+
+COCOAPODS: 1.5.3

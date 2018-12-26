@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNTextOffice-Regular.ttf">
+            <string>HyundaiSansVnTextOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LineDetailCell" id="KGk-i7-Jjw" customClass="LineDetailCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày kích hoạt:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwT-g0-0xc">
+                        <rect key="frame" x="10" y="11.5" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="cwb-fh-zo2"/>
+                            <constraint firstAttribute="height" constant="21" id="kQy-cQ-FK1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnTextOffice-Regular" family="Hyundai Sans VN Text Office" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/07/2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snp-2O-hD7">
+                        <rect key="frame" x="170" y="11" width="150" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                        <color key="textColor" red="0.2470588235" green="0.37254901959999998" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="VwT-g0-0xc" secondAttribute="bottom" constant="11" id="3h7-hw-K8r"/>
+                    <constraint firstAttribute="trailing" secondItem="Snp-2O-hD7" secondAttribute="trailing" id="P3G-Aa-ssI"/>
+                    <constraint firstItem="VwT-g0-0xc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eF6-nA-0XN"/>
+                    <constraint firstItem="Snp-2O-hD7" firstAttribute="leading" secondItem="VwT-g0-0xc" secondAttribute="trailing" constant="10" id="fqj-YS-2hr"/>
+                    <constraint firstItem="VwT-g0-0xc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11.5" id="n6A-hw-dJb"/>
+                    <constraint firstItem="Snp-2O-hD7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ncc-UJ-kKR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLabel" destination="Snp-2O-hD7" id="M7h-Lv-j7u"/>
+                <outlet property="titleLabel" destination="VwT-g0-0xc" id="aga-CG-WKS"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="106.14692653673164"/>
+        </tableViewCell>
+    </objects>
+</document>

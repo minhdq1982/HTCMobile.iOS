@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>880695654071-0h622c70hn4iibr4b2h30j7ocmi1u60u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.880695654071-0h622c70hn4iibr4b2h30j7ocmi1u60u</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCkexWFeezWBxOBS40eJ-kdrSabtkQKTqg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>880695654071</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tvo.HTCMobileApp.Internal</string>
+	<key>PROJECT_ID</key>
+	<string>htc-mobile-app-223402</string>
+	<key>STORAGE_BUCKET</key>
+	<string>htc-mobile-app-223402.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:880695654071:ios:1b5f65093b346f06</string>
+	<key>DATABASE_URL</key>
+	<string>https://htc-mobile-app-223402.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCarTableViewCell" rowHeight="84" id="Hdm-3x-bE9" customClass="DetailCarTableViewCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hdm-3x-bE9" id="ICW-cL-Ugw">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VTe-eQ-LNY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zh-7r-3UD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="83.5" id="eJ0-Gb-okq"/>
+                        </constraints>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VTe-eQ-LNY" firstAttribute="top" secondItem="ICW-cL-Ugw" secondAttribute="top" id="64c-hK-hrA"/>
+                    <constraint firstItem="3Zh-7r-3UD" firstAttribute="bottom" secondItem="VTe-eQ-LNY" secondAttribute="bottom" id="F5H-j5-Lpv"/>
+                    <constraint firstAttribute="trailing" secondItem="3Zh-7r-3UD" secondAttribute="trailing" id="PXd-KH-NOV"/>
+                    <constraint firstItem="3Zh-7r-3UD" firstAttribute="top" secondItem="ICW-cL-Ugw" secondAttribute="top" id="TF3-hI-hY8"/>
+                    <constraint firstItem="VTe-eQ-LNY" firstAttribute="leading" secondItem="ICW-cL-Ugw" secondAttribute="leading" id="aRc-Uu-ujw"/>
+                    <constraint firstAttribute="trailing" secondItem="VTe-eQ-LNY" secondAttribute="trailing" id="l23-M2-CQJ"/>
+                    <constraint firstAttribute="bottom" secondItem="3Zh-7r-3UD" secondAttribute="bottom" id="nQa-a2-UDL"/>
+                    <constraint firstItem="3Zh-7r-3UD" firstAttribute="leading" secondItem="ICW-cL-Ugw" secondAttribute="leading" id="vzS-Mt-Jwe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentHeight" destination="eJ0-Gb-okq" id="0Mk-qj-2Av"/>
+                <outlet property="tableView" destination="VTe-eQ-LNY" id="WWG-ra-u0q"/>
+                <outlet property="webView" destination="3Zh-7r-3UD" id="qon-Zf-2F3"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="66.566716641679164"/>
+        </tableViewCell>
+    </objects>
+</document>

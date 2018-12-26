@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="gO6-ka-Dlc">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="rHe-pd-X0f" customClass="HomeViewController" customModule="HTCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="98v-Fw-pDe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdd-Wb-FHM" userLabel="BackgroundView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="S4u-5Y-jPP" userLabel="BackgroundImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.15686274510000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="S4u-5Y-jPP" firstAttribute="top" secondItem="bdd-Wb-FHM" secondAttribute="top" id="3b9-hB-yk3"/>
+                                    <constraint firstAttribute="trailing" secondItem="S4u-5Y-jPP" secondAttribute="trailing" id="UUg-CU-u21"/>
+                                    <constraint firstItem="S4u-5Y-jPP" firstAttribute="leading" secondItem="bdd-Wb-FHM" secondAttribute="leading" id="poe-vz-MAF"/>
+                                    <constraint firstAttribute="bottom" secondItem="S4u-5Y-jPP" secondAttribute="bottom" id="v6s-JJ-Fzm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDh-sD-VWH" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_hyundai_logo" translatesAutoresizingMaskIntoConstraints="NO" id="PSU-Fc-1eM">
+                                        <rect key="frame" x="12" y="10" width="138" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="138" id="TOA-cQ-92d"/>
+                                            <constraint firstAttribute="height" constant="30" id="zuV-JN-Ypo"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJA-QZ-Eol" userLabel="NotificationButton">
+                                        <rect key="frame" x="325" y="5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Dv2-Qh-hAD"/>
+                                            <constraint firstAttribute="height" constant="40" id="VgP-Pr-VAZ"/>
+                                        </constraints>
+                                        <state key="normal" image="notification"/>
+                                        <connections>
+                                            <action selector="tapNotificationAction:" destination="rHe-pd-X0f" eventType="touchUpInside" id="NIh-Yq-FuI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goA-GY-KQi" userLabel="ProfileButton">
+                                        <rect key="frame" x="277" y="5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="JRY-uD-NzT"/>
+                                            <constraint firstAttribute="height" constant="40" id="vDf-hv-XTl"/>
+                                        </constraints>
+                                        <state key="normal" image="home_user"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgv-Ad-R4v" userLabel="TitleLabel">
+                                        <rect key="frame" x="187.5" y="25" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="PSU-Fc-1eM" firstAttribute="centerY" secondItem="xDh-sD-VWH" secondAttribute="centerY" id="GaO-fK-E9o"/>
+                                    <constraint firstAttribute="height" constant="50" id="IBs-M4-U7P"/>
+                                    <constraint firstItem="rJA-QZ-Eol" firstAttribute="centerY" secondItem="xDh-sD-VWH" secondAttribute="centerY" id="KkJ-3r-k8b"/>
+                                    <constraint firstItem="goA-GY-KQi" firstAttribute="centerY" secondItem="rJA-QZ-Eol" secondAttribute="centerY" id="O26-EH-dPg"/>
+                                    <constraint firstAttribute="trailing" secondItem="rJA-QZ-Eol" secondAttribute="trailing" constant="10" id="QFR-nM-1Fn"/>
+                                    <constraint firstItem="Dgv-Ad-R4v" firstAttribute="centerY" secondItem="xDh-sD-VWH" secondAttribute="centerY" id="R5P-Gf-uid"/>
+                                    <constraint firstItem="Dgv-Ad-R4v" firstAttribute="centerX" secondItem="xDh-sD-VWH" secondAttribute="centerX" id="deb-LA-4rB"/>
+                                    <constraint firstItem="rJA-QZ-Eol" firstAttribute="leading" secondItem="goA-GY-KQi" secondAttribute="trailing" constant="8" id="qdb-EP-MLJ"/>
+                                    <constraint firstItem="PSU-Fc-1eM" firstAttribute="leading" secondItem="xDh-sD-VWH" secondAttribute="leading" constant="12" id="vkB-PG-yAo"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ueu-Xu-06V">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ueu-Xu-06V" firstAttribute="top" secondItem="xDh-sD-VWH" secondAttribute="bottom" id="0dg-SE-e1F"/>
+                            <constraint firstItem="bdd-Wb-FHM" firstAttribute="top" secondItem="98v-Fw-pDe" secondAttribute="top" id="3pi-Ae-eYG"/>
+                            <constraint firstItem="bdd-Wb-FHM" firstAttribute="leading" secondItem="g7g-UV-KJs" secondAttribute="leading" id="7SY-bY-MeB"/>
+                            <constraint firstItem="Ueu-Xu-06V" firstAttribute="bottom" secondItem="g7g-UV-KJs" secondAttribute="bottom" id="JK7-Yu-A68"/>
+                            <constraint firstItem="bdd-Wb-FHM" firstAttribute="bottom" secondItem="g7g-UV-KJs" secondAttribute="bottom" id="LXj-Ts-AfU"/>
+                            <constraint firstItem="g7g-UV-KJs" firstAttribute="trailing" secondItem="xDh-sD-VWH" secondAttribute="trailing" id="U4j-6C-ANw"/>
+                            <constraint firstItem="xDh-sD-VWH" firstAttribute="top" secondItem="g7g-UV-KJs" secondAttribute="top" id="Vp4-uF-b4x"/>
+                            <constraint firstItem="bdd-Wb-FHM" firstAttribute="trailing" secondItem="g7g-UV-KJs" secondAttribute="trailing" id="btd-MJ-pg4"/>
+                            <constraint firstItem="Ueu-Xu-06V" firstAttribute="leading" secondItem="g7g-UV-KJs" secondAttribute="leading" id="iRx-mT-MOY"/>
+                            <constraint firstItem="Ueu-Xu-06V" firstAttribute="trailing" secondItem="g7g-UV-KJs" secondAttribute="trailing" id="kd1-eK-zye"/>
+                            <constraint firstItem="xDh-sD-VWH" firstAttribute="leading" secondItem="98v-Fw-pDe" secondAttribute="leading" id="xxI-3R-PgH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g7g-UV-KJs"/>
+                    </view>
+                    <connections>
+                        <outlet property="headerTitle" destination="Dgv-Ad-R4v" id="W53-hi-qHX"/>
+                        <outlet property="headerView" destination="xDh-sD-VWH" id="7ta-hs-hVG"/>
+                        <outlet property="notificationButton" destination="rJA-QZ-Eol" id="p0j-zX-hvl"/>
+                        <outlet property="notificationWidthContraint" destination="Dv2-Qh-hAD" id="Dxs-9e-Dkc"/>
+                        <outlet property="profileButton" destination="goA-GY-KQi" id="Sh0-Gv-0lJ"/>
+                        <outlet property="tableView" destination="Ueu-Xu-06V" id="bu3-2Z-765"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bko-9l-d7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="-313.49325337331339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="519"/>
+        <image name="home_hyundai_logo" width="138" height="30"/>
+        <image name="home_user" width="24" height="24"/>
+        <image name="notification" width="24" height="24"/>
+    </resources>
+</document>

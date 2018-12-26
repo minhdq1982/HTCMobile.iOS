@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarFooterCollectionView" id="6KD-sE-w8l" customClass="CarFooterCollectionView" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ja-nu-ii4" customClass="CustomButton" customModule="HTCMobile" customModuleProvider="target">
+                    <rect key="frame" x="94" y="8" width="187.5" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="YN2-hj-bhk"/>
+                    </constraints>
+                    <state key="normal" title="Tất cả"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1ja-nu-ii4" firstAttribute="width" secondItem="6KD-sE-w8l" secondAttribute="width" multiplier="1/2" id="Q4H-zh-dtI"/>
+                <constraint firstItem="1ja-nu-ii4" firstAttribute="centerX" secondItem="AZ4-HR-vU8" secondAttribute="centerX" id="aQS-uo-Lj5"/>
+                <constraint firstItem="1ja-nu-ii4" firstAttribute="top" secondItem="AZ4-HR-vU8" secondAttribute="top" constant="8" id="u55-LC-gqd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="AZ4-HR-vU8"/>
+            <connections>
+                <outlet property="allButton" destination="1ja-nu-ii4" id="y0G-Ho-jrz"/>
+            </connections>
+            <point key="canvasLocation" x="101.59999999999999" y="71.064467766116948"/>
+        </collectionReusableView>
+    </objects>
+</document>

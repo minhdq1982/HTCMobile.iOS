@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PromotionCollectionViewCell" id="WMb-6S-7Gh" customClass="PromotionCollectionViewCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="224"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="224"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_no_image" translatesAutoresizingMaskIntoConstraints="NO" id="ddN-GN-acr" customClass="RoundedImageView" customModule="HTCMobile" customModuleProvider="target">
+                        <rect key="frame" x="12" y="8" width="276" height="146"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="146" id="w5n-L5-1R7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJw-b7-wdH" userLabel="Date Label">
+                        <rect key="frame" x="12" y="162" width="276" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Hal-LT-xn3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLU-At-SrR" userLabel="Title Label">
+                        <rect key="frame" x="12" y="178" width="276" height="46"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="XLU-At-SrR" firstAttribute="trailing" secondItem="GJw-b7-wdH" secondAttribute="trailing" id="I7A-tc-vjb"/>
+                <constraint firstItem="GJw-b7-wdH" firstAttribute="trailing" secondItem="ddN-GN-acr" secondAttribute="trailing" id="Jbg-My-N2O"/>
+                <constraint firstItem="XLU-At-SrR" firstAttribute="bottom" secondItem="WMb-6S-7Gh" secondAttribute="bottom" id="Lwv-Hc-FPv"/>
+                <constraint firstItem="GJw-b7-wdH" firstAttribute="leading" secondItem="ddN-GN-acr" secondAttribute="leading" id="SGN-vY-oha"/>
+                <constraint firstItem="XLU-At-SrR" firstAttribute="leading" secondItem="GJw-b7-wdH" secondAttribute="leading" id="Ysb-k0-ZjV"/>
+                <constraint firstItem="ddN-GN-acr" firstAttribute="leading" secondItem="WMb-6S-7Gh" secondAttribute="leading" constant="12" id="erk-Nv-odd"/>
+                <constraint firstItem="XLU-At-SrR" firstAttribute="top" secondItem="GJw-b7-wdH" secondAttribute="bottom" id="fcS-VG-CPJ"/>
+                <constraint firstItem="ddN-GN-acr" firstAttribute="top" secondItem="WMb-6S-7Gh" secondAttribute="top" constant="8" id="hXx-x4-jeA"/>
+                <constraint firstAttribute="trailing" secondItem="ddN-GN-acr" secondAttribute="trailing" constant="12" id="tj7-QD-deT"/>
+                <constraint firstItem="GJw-b7-wdH" firstAttribute="top" secondItem="ddN-GN-acr" secondAttribute="bottom" constant="8" id="ume-4M-qrq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="TIW-bs-D2S"/>
+            <size key="customSize" width="302" height="189"/>
+            <connections>
+                <outlet property="dateLabel" destination="GJw-b7-wdH" id="473-Nn-v2W"/>
+                <outlet property="proImageView" destination="ddN-GN-acr" id="arp-qR-O30"/>
+                <outlet property="titleLabel" destination="XLU-At-SrR" id="GMM-eH-AWe"/>
+            </connections>
+            <point key="canvasLocation" x="254.40000000000001" y="158.32083958020991"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_no_image" width="786" height="420"/>
+    </resources>
+</document>

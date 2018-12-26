@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NotificationHeaderCollectionView" id="e8m-hQ-eg4" customClass="NotificationHeaderCollectionView" customModule="HTCMobileApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzp-Lg-dCO">
+                    <rect key="frame" x="12" y="0.0" width="351" height="50"/>
+                    <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="16"/>
+                    <color key="textColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsq-hU-UeB" userLabel="Separator Top">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="4sY-Yv-FFG"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZp-P3-SVo" userLabel="Separator Bottom">
+                    <rect key="frame" x="0.0" y="49.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="oYR-bA-0LY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Nsq-hU-UeB" firstAttribute="leading" secondItem="e8m-hQ-eg4" secondAttribute="leading" id="E3w-Im-tjB"/>
+                <constraint firstItem="gsU-TG-7YV" firstAttribute="bottom" secondItem="AZp-P3-SVo" secondAttribute="bottom" id="N1I-LP-ARY"/>
+                <constraint firstAttribute="trailing" secondItem="AZp-P3-SVo" secondAttribute="trailing" id="VfF-LT-BFp"/>
+                <constraint firstItem="Nzp-Lg-dCO" firstAttribute="top" secondItem="gsU-TG-7YV" secondAttribute="top" id="gAX-eJ-lfL"/>
+                <constraint firstItem="AZp-P3-SVo" firstAttribute="leading" secondItem="e8m-hQ-eg4" secondAttribute="leading" id="ipg-eG-abs"/>
+                <constraint firstItem="gsU-TG-7YV" firstAttribute="trailing" secondItem="Nzp-Lg-dCO" secondAttribute="trailing" constant="12" id="lTi-O7-HA2"/>
+                <constraint firstAttribute="trailing" secondItem="Nsq-hU-UeB" secondAttribute="trailing" id="peJ-wo-pGJ"/>
+                <constraint firstItem="gsU-TG-7YV" firstAttribute="bottom" secondItem="Nzp-Lg-dCO" secondAttribute="bottom" id="peR-dF-sug"/>
+                <constraint firstItem="Nzp-Lg-dCO" firstAttribute="leading" secondItem="gsU-TG-7YV" secondAttribute="leading" constant="12" id="wKx-qi-Gkv"/>
+                <constraint firstItem="Nsq-hU-UeB" firstAttribute="top" secondItem="gsU-TG-7YV" secondAttribute="top" id="wXO-hF-k3v"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="gsU-TG-7YV"/>
+            <connections>
+                <outlet property="titleLabel" destination="Nzp-Lg-dCO" id="v0C-oF-ujK"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>

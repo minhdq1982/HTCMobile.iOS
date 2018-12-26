@@ -1,0 +1,110 @@
+/*
+  Localizable.strings
+  HTCMobileApp
+ 
+  Created by Tuan Pham Hai  on 10/19/18.
+  Copyright © 2018 Tinhvan Outsourcing JSC. All rights reserved.
+ */
+
+"NSLocationWhenInUseUsageDescription" = "Ứng dụng cần được cấp quyền truy cập vị trí của bạn";
+
+//  Home
+"home.title" = "Trang chủ";
+"home.text.add.card" = "Thêm thẻ";
+"home.text.interest" = "Quyền lợi";
+"home.text.card.info" = "Thông tin thẻ";
+"home.text.use.card" = "Sử dụng thẻ";
+
+"cars.title" = "Mua xe";
+
+//  Services
+"services.title" = "Dịch vụ";
+"services.text.schedule" = "Lịch hẹn";
+"services.text.maintenance.price" = "Giá bảo dưỡng";
+
+"news.title" = "Tin tức";
+"support.title" = "Hỗ trợ";
+
+//  Terms of use
+"termofuse.text.agree" = "Đồng ý";
+
+//  Common
+"common.text.ok" = "Đồng ý";
+"common.text.cancel" = "Huỷ";
+
+//  Menu
+"menu.text.hello" = "Xin chào";
+"menu.text.login" = "Đăng nhập";
+"menu.text.logout" = "Đăng xuất";
+"menu.text.personal.info" = "Thông tin cá nhân";
+"menu.text.maintenance.scheduler" = "Nhắc lịch bảo dưỡng";
+"menu.text.setting" = "Thiết lập";
+
+// Login
+"login.title" = "Đăng nhập";
+"login.phoneNumber" = "Số điện thoại";
+"login.check" = "Vui lòng điền số điện thoại trước khi đăng nhập";
+"login.note" = "Sau khi đăng nhập, bạn có thể sử dụng những công cụ hỗ trợ dành cho thành viên Hyundai";
+
+// Login Confirm
+"login.confirm" = "Xác nhận";
+"login.confirm.title" =  "Xác nhận đăng nhập";
+"login.confirm.note" = "Điền mã OTP đã được gửi tới số điện thoại của Quý khách";
+"login.confirm.code" = "Nhập mã OTP";
+"login.confirm.check" = "Vui lòng điền mã xác OTP để hoàn tất quá trình đăng nhập";
+"login.confirm.code.expiration.time" = "Mã OTP hết hạn sau";
+"login.confirm.code.expired" = "Mã OTP đã hết hạn";
+"login.confirm.resend.code" = "  Gửi lại mã OTP";
+"login.confirm.check.length.code" = "Mã OTP cần đủ 6 kí tự số";
+
+// User
+"user.title" = "Thông tin cá nhân";
+"user.save" = "Lưu";
+"user.car.information" = "Thông tin xe";
+"user.member.card" = "Thẻ hội viên";
+"user.phone" = "Số điện thoại";
+"user.dateOfBirth" = "Ngày sinh";
+"user.cmnd" = "Số CMND/ căn cước công dân";
+"user.email" = "Email";
+"user.address" = "Địa chỉ";
+"user.add.member.title" = "Thêm thẻ hội viên";
+"user.add.member" = "Thêm thẻ";
+
+"user.car.add" = "Thêm xe";
+"user.car.title" = "Thêm xe";
+"user.car.name" = "Tên xe";
+"user.car.vinno" = "Số VIN";
+"user.car.license.plate" = "Biển số";
+"user.car.note" = "Biển số viết liền không dùng dấu . và dấu cách";
+"user.car.brand" = "Đại lý mua";
+"user.car.date.purchase" = "Ngày mua";
+"user.edit.car.title" = "Sửa thông tin xe";
+
+
+// Alert
+"alert.title" = "Thông báo";
+"alert.close" = "Đóng";
+"alert.agree" = "Đồng ý";
+"alert.ask.member" = "Bạn chắc chắn muốn xoá thẻ hội viên này không?";
+"alert.use.card.note" = "Đặt khung quét mã QR code vào đúng vị trí ảnh QR code";
+"alert.add.card.title" = "Thêm thẻ hội viên thành công";
+
+
+
+// News
+"news.htc" = "Tin HTC";
+"news.product" = "Tin thị trường và sản phẩm";
+"news.newfeeds" = "News Feed";
+"news.good.title" = "Ưu đãi từ HTC";
+
+// Benefit
+
+"benefit.title" = "Quyền lợi";
+"benefit.detail" = "Chi tiết quyền lợi";
+"benefit.brand" = "Danh sách đại lý áp dụng";
+"benefit.of.you" = "Quyền lợi của bạn";
+
+// History Card
+
+"history.title" = "Lịch sử";
+

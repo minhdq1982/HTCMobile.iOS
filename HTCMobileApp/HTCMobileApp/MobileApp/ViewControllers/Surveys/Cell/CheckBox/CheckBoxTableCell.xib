@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckBoxTableCell" rowHeight="81" id="KGk-i7-Jjw" customClass="CheckBoxTableCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQW-9W-rAE">
+                        <rect key="frame" x="0.0" y="12" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="WN4-d1-hut"/>
+                            <constraint firstAttribute="height" constant="24" id="qCL-FG-Ef1"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="unchecked_survey"/>
+                        <state key="selected" backgroundImage="checked_survey"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Không đủ thời gian để sửa/ Lịch sửa chữa quá dầy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="she-YE-LDf">
+                        <rect key="frame" x="36" y="6.5" width="284" height="35"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="14"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khác" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxQ-AQ-OKo">
+                        <rect key="frame" x="36" y="15" width="33.5" height="17.5"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập câu trả lời" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ngb-yQ-s5Y">
+                        <rect key="frame" x="81.5" y="0.0" width="238.5" height="48"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ZxQ-AQ-OKo" firstAttribute="centerY" secondItem="mQW-9W-rAE" secondAttribute="centerY" id="3dF-li-DoX"/>
+                    <constraint firstAttribute="bottom" secondItem="ngb-yQ-s5Y" secondAttribute="bottom" id="EMy-h6-jT6"/>
+                    <constraint firstItem="she-YE-LDf" firstAttribute="centerY" secondItem="mQW-9W-rAE" secondAttribute="centerY" id="L1L-yV-NrZ"/>
+                    <constraint firstItem="mQW-9W-rAE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="OkU-3h-Lyb"/>
+                    <constraint firstItem="ngb-yQ-s5Y" firstAttribute="centerY" secondItem="mQW-9W-rAE" secondAttribute="centerY" id="QTG-Ap-hIQ"/>
+                    <constraint firstItem="ngb-yQ-s5Y" firstAttribute="trailing" secondItem="she-YE-LDf" secondAttribute="trailing" id="X8d-6T-3Tz"/>
+                    <constraint firstItem="ZxQ-AQ-OKo" firstAttribute="leading" secondItem="mQW-9W-rAE" secondAttribute="trailing" constant="12" id="XEL-GT-Txc"/>
+                    <constraint firstItem="she-YE-LDf" firstAttribute="leading" secondItem="mQW-9W-rAE" secondAttribute="trailing" constant="12" id="bls-HM-ZXD"/>
+                    <constraint firstItem="ngb-yQ-s5Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="l1Q-vF-Gb2"/>
+                    <constraint firstAttribute="bottom" secondItem="mQW-9W-rAE" secondAttribute="bottom" constant="12" id="vQ8-Oh-8Lk"/>
+                    <constraint firstItem="ngb-yQ-s5Y" firstAttribute="leading" secondItem="ZxQ-AQ-OKo" secondAttribute="trailing" constant="12" id="zBs-Ox-YFc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="she-YE-LDf" firstAttribute="trailing" secondItem="njF-e1-oar" secondAttribute="trailing" id="JGe-aX-ILE"/>
+                <constraint firstItem="mQW-9W-rAE" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="mQI-n4-88Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="answerLabel" destination="she-YE-LDf" id="c0v-wh-ODY"/>
+                <outlet property="checkBoxButton" destination="mQW-9W-rAE" id="vDz-KP-hdR"/>
+                <outlet property="otherLabel" destination="ZxQ-AQ-OKo" id="nKC-Ts-WKQ"/>
+                <outlet property="otherTextField" destination="ngb-yQ-s5Y" id="qgE-24-BDn"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="65.217391304347828"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checked_survey" width="24" height="24"/>
+        <image name="unchecked_survey" width="24" height="24"/>
+    </resources>
+</document>

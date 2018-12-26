@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Bold.ttf">
+            <string>HyundaiSansVnHeadOffice-Bold</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCarHeaderCell" id="xVb-UN-Kdw" customClass="DetailCarHeaderCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xVb-UN-Kdw" id="Qvk-6X-d3C">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="499.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailcar" translatesAutoresizingMaskIntoConstraints="NO" id="bRI-j2-Ff6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="373.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="373" id="syE-cF-gdk"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Fu-l1-hJe" userLabel="HeaderView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMA-4R-7WX" userLabel="BackButton">
+                                <rect key="frame" x="10" y="5.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IkC-4s-5ml"/>
+                                    <constraint firstAttribute="width" constant="40" id="Wcc-5p-jGt"/>
+                                </constraints>
+                                <state key="normal" image="icon_back"/>
+                                <connections>
+                                    <action selector="tapBackButton:" destination="xVb-UN-Kdw" eventType="touchUpInside" id="GDh-ke-hs8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yMA-4R-7WX" firstAttribute="leading" secondItem="4Fu-l1-hJe" secondAttribute="leading" constant="10" id="HBg-uX-2WB"/>
+                            <constraint firstAttribute="height" constant="50" id="JO7-FQ-5qL"/>
+                            <constraint firstItem="yMA-4R-7WX" firstAttribute="centerY" secondItem="4Fu-l1-hJe" secondAttribute="centerY" id="aMr-oM-Kwt"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAy-Q7-guY">
+                        <rect key="frame" x="0.0" y="373.5" width="375" height="127"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accent 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtB-YB-TBT">
+                                <rect key="frame" x="12" y="8" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LAq-JX-7p6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.15686274510000001" blue="0.33725490200000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-PJ-Xgh">
+                                <rect key="frame" x="12" y="38" width="351" height="81"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abC-2Y-Ou8">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="81"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_compare" translatesAutoresizingMaskIntoConstraints="NO" id="nqd-TO-AxC">
+                                                <rect key="frame" x="42.5" y="10" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="GKV-UU-3bx"/>
+                                                    <constraint firstAttribute="width" constant="32" id="WrS-iz-02i"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So sánh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW4-3Z-4VO">
+                                                <rect key="frame" x="0.0" y="44" width="117" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Dom-I8-SiU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDK-xk-HKg">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="81"/>
+                                                <connections>
+                                                    <action selector="tapCompareButton:" destination="xVb-UN-Kdw" eventType="touchUpInside" id="6mG-Nv-I1z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="oDK-xk-HKg" secondAttribute="trailing" id="82I-9s-ioN"/>
+                                            <constraint firstItem="qW4-3Z-4VO" firstAttribute="top" secondItem="nqd-TO-AxC" secondAttribute="bottom" constant="2" id="CIT-O9-TaM"/>
+                                            <constraint firstItem="qW4-3Z-4VO" firstAttribute="leading" secondItem="abC-2Y-Ou8" secondAttribute="leading" id="F2L-wX-kLD"/>
+                                            <constraint firstItem="nqd-TO-AxC" firstAttribute="top" secondItem="abC-2Y-Ou8" secondAttribute="top" constant="10" id="KOd-xO-cJA"/>
+                                            <constraint firstAttribute="bottom" secondItem="oDK-xk-HKg" secondAttribute="bottom" id="OPk-Hp-z3p"/>
+                                            <constraint firstItem="nqd-TO-AxC" firstAttribute="centerX" secondItem="abC-2Y-Ou8" secondAttribute="centerX" id="SIE-Ek-mJN"/>
+                                            <constraint firstItem="oDK-xk-HKg" firstAttribute="top" secondItem="abC-2Y-Ou8" secondAttribute="top" id="YUa-Aa-jjs"/>
+                                            <constraint firstAttribute="trailing" secondItem="qW4-3Z-4VO" secondAttribute="trailing" id="aJV-6r-5Up"/>
+                                            <constraint firstItem="oDK-xk-HKg" firstAttribute="leading" secondItem="abC-2Y-Ou8" secondAttribute="leading" id="rrl-ol-2qg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zb-Wr-cCA">
+                                        <rect key="frame" x="117" y="0.0" width="117" height="81"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_drive" translatesAutoresizingMaskIntoConstraints="NO" id="Y88-d1-DE6">
+                                                <rect key="frame" x="42.5" y="10" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="Fbc-0n-4jY"/>
+                                                    <constraint firstAttribute="width" constant="32" id="gU1-5Z-ZNe"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký lái thử" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMZ-KL-zVz">
+                                                <rect key="frame" x="0.0" y="44" width="117" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="AQN-1s-VAm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIk-1p-WAr">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="81"/>
+                                                <connections>
+                                                    <action selector="tapRegisterDriveButton:" destination="xVb-UN-Kdw" eventType="touchUpInside" id="CFV-PN-vZb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="vIk-1p-WAr" firstAttribute="leading" secondItem="9zb-Wr-cCA" secondAttribute="leading" id="3je-ws-YN0"/>
+                                            <constraint firstItem="VMZ-KL-zVz" firstAttribute="top" secondItem="Y88-d1-DE6" secondAttribute="bottom" constant="2" id="Ehq-uk-yTd"/>
+                                            <constraint firstAttribute="trailing" secondItem="vIk-1p-WAr" secondAttribute="trailing" id="Exs-Aa-CSa"/>
+                                            <constraint firstItem="Y88-d1-DE6" firstAttribute="top" secondItem="9zb-Wr-cCA" secondAttribute="top" constant="10" id="KRp-iY-KnB"/>
+                                            <constraint firstItem="VMZ-KL-zVz" firstAttribute="leading" secondItem="9zb-Wr-cCA" secondAttribute="leading" id="PVe-BO-Mxm"/>
+                                            <constraint firstAttribute="trailing" secondItem="VMZ-KL-zVz" secondAttribute="trailing" id="VWh-Lg-wqw"/>
+                                            <constraint firstItem="Y88-d1-DE6" firstAttribute="centerX" secondItem="9zb-Wr-cCA" secondAttribute="centerX" id="eJj-cr-GE4"/>
+                                            <constraint firstItem="vIk-1p-WAr" firstAttribute="top" secondItem="9zb-Wr-cCA" secondAttribute="top" id="oro-gg-Nfd"/>
+                                            <constraint firstAttribute="bottom" secondItem="vIk-1p-WAr" secondAttribute="bottom" id="tub-ao-bbB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3V-74-xqW">
+                                        <rect key="frame" x="234" y="0.0" width="117" height="81"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_advice" translatesAutoresizingMaskIntoConstraints="NO" id="jKr-lA-0iR">
+                                                <rect key="frame" x="42.5" y="10" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="fk4-GR-rXU"/>
+                                                    <constraint firstAttribute="width" constant="32" id="p5Q-5w-M8C"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tư vấn giá" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezr-3h-9FM">
+                                                <rect key="frame" x="0.0" y="44" width="117" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="MdH-V3-WUR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucW-uT-QLv">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="81"/>
+                                                <connections>
+                                                    <action selector="tapPriceAdviceButton:" destination="xVb-UN-Kdw" eventType="touchUpInside" id="2XJ-99-uXv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ezr-3h-9FM" secondAttribute="trailing" id="2ft-pf-fba"/>
+                                            <constraint firstItem="ezr-3h-9FM" firstAttribute="leading" secondItem="a3V-74-xqW" secondAttribute="leading" id="KDu-n0-dbZ"/>
+                                            <constraint firstItem="ezr-3h-9FM" firstAttribute="top" secondItem="jKr-lA-0iR" secondAttribute="bottom" constant="2" id="Nh6-tv-eDg"/>
+                                            <constraint firstItem="jKr-lA-0iR" firstAttribute="top" secondItem="a3V-74-xqW" secondAttribute="top" constant="10" id="R78-xQ-fVc"/>
+                                            <constraint firstAttribute="bottom" secondItem="ucW-uT-QLv" secondAttribute="bottom" id="lkH-Lc-3TL"/>
+                                            <constraint firstItem="ucW-uT-QLv" firstAttribute="leading" secondItem="a3V-74-xqW" secondAttribute="leading" id="m0K-ZM-hmM"/>
+                                            <constraint firstAttribute="trailing" secondItem="ucW-uT-QLv" secondAttribute="trailing" id="mkK-MP-f85"/>
+                                            <constraint firstItem="ucW-uT-QLv" firstAttribute="top" secondItem="a3V-74-xqW" secondAttribute="top" id="xQ1-ml-kAm"/>
+                                            <constraint firstItem="jKr-lA-0iR" firstAttribute="centerX" secondItem="a3V-74-xqW" secondAttribute="centerX" id="zbf-yg-49y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HtB-YB-TBT" firstAttribute="top" secondItem="eAy-Q7-guY" secondAttribute="top" constant="8" id="6vq-aY-bux"/>
+                            <constraint firstAttribute="trailing" secondItem="Lo9-PJ-Xgh" secondAttribute="trailing" constant="12" id="EG4-JA-wRg"/>
+                            <constraint firstItem="HtB-YB-TBT" firstAttribute="leading" secondItem="eAy-Q7-guY" secondAttribute="leading" constant="12" id="Kt0-jH-oUd"/>
+                            <constraint firstAttribute="height" constant="127" id="N58-Ka-yCO"/>
+                            <constraint firstItem="Lo9-PJ-Xgh" firstAttribute="top" secondItem="HtB-YB-TBT" secondAttribute="bottom" id="X6g-7S-ZRz"/>
+                            <constraint firstAttribute="trailing" secondItem="HtB-YB-TBT" secondAttribute="trailing" constant="12" id="XSo-Uz-xaF"/>
+                            <constraint firstAttribute="bottom" secondItem="Lo9-PJ-Xgh" secondAttribute="bottom" constant="8" id="rvY-ai-xVk"/>
+                            <constraint firstItem="Lo9-PJ-Xgh" firstAttribute="leading" secondItem="eAy-Q7-guY" secondAttribute="leading" constant="12" id="wh3-9O-qmp"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5p-ua-YnU">
+                        <rect key="frame" x="233" y="329.5" width="130" height="32"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_download" translatesAutoresizingMaskIntoConstraints="NO" id="OQ8-Gg-bYz">
+                                <rect key="frame" x="8" y="4" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24" id="ABy-9e-0qy"/>
+                                    <constraint firstAttribute="height" constant="24" id="gvP-aD-lei"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="oQ8-6u-NCW"/>
+                                    <constraint firstAttribute="width" constant="24" id="qaT-qR-3Yb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catalog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4S-dG-VAi">
+                                <rect key="frame" x="44" y="0.0" width="78" height="32"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaa-3v-avg">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapDownloadCatalogButton:" destination="xVb-UN-Kdw" eventType="touchUpInside" id="hun-Gp-nWn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OQ8-Gg-bYz" firstAttribute="centerY" secondItem="q5p-ua-YnU" secondAttribute="centerY" id="45C-BG-hnS"/>
+                            <constraint firstItem="OQ8-Gg-bYz" firstAttribute="leading" secondItem="q5p-ua-YnU" secondAttribute="leading" constant="8" id="7Nx-yP-FhU"/>
+                            <constraint firstItem="l4S-dG-VAi" firstAttribute="top" secondItem="q5p-ua-YnU" secondAttribute="top" id="DnW-pp-AqT"/>
+                            <constraint firstAttribute="trailing" secondItem="l4S-dG-VAi" secondAttribute="trailing" constant="8" id="Ngt-Rl-FgW"/>
+                            <constraint firstItem="l4S-dG-VAi" firstAttribute="leading" secondItem="OQ8-Gg-bYz" secondAttribute="trailing" constant="12" id="Qa4-xr-XA7"/>
+                            <constraint firstItem="l4S-dG-VAi" firstAttribute="leading" secondItem="OQ8-Gg-bYz" secondAttribute="trailing" constant="12" id="Yy6-I3-bkG"/>
+                            <constraint firstAttribute="height" constant="32" id="eZZ-oV-zlQ"/>
+                            <constraint firstAttribute="width" constant="130" id="fNk-eR-Mzv"/>
+                            <constraint firstAttribute="bottom" secondItem="l4S-dG-VAi" secondAttribute="bottom" id="i9I-iu-y8t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eAy-Q7-guY" secondAttribute="bottom" id="048-GK-kJU"/>
+                    <constraint firstItem="eAy-Q7-guY" firstAttribute="leading" secondItem="Qvk-6X-d3C" secondAttribute="leading" id="0M1-G2-n42"/>
+                    <constraint firstItem="bRI-j2-Ff6" firstAttribute="leading" secondItem="Qvk-6X-d3C" secondAttribute="leading" id="7Mx-en-7OJ"/>
+                    <constraint firstItem="eAy-Q7-guY" firstAttribute="top" secondItem="bRI-j2-Ff6" secondAttribute="bottom" id="7o8-Nv-qN3"/>
+                    <constraint firstAttribute="trailing" secondItem="4Fu-l1-hJe" secondAttribute="trailing" id="AfW-gd-6bt"/>
+                    <constraint firstItem="q5p-ua-YnU" firstAttribute="bottom" secondItem="bRI-j2-Ff6" secondAttribute="bottom" constant="-12" id="HLY-4U-tRD"/>
+                    <constraint firstItem="4Fu-l1-hJe" firstAttribute="leading" secondItem="Qvk-6X-d3C" secondAttribute="leading" id="XLx-re-UIc"/>
+                    <constraint firstItem="4Fu-l1-hJe" firstAttribute="top" secondItem="Qvk-6X-d3C" secondAttribute="top" id="c3y-Hn-Pnh"/>
+                    <constraint firstAttribute="trailing" secondItem="bRI-j2-Ff6" secondAttribute="trailing" id="f2U-Vn-3sr"/>
+                    <constraint firstAttribute="trailing" secondItem="eAy-Q7-guY" secondAttribute="trailing" id="hiM-Br-M4j"/>
+                    <constraint firstItem="q5p-ua-YnU" firstAttribute="trailing" secondItem="bRI-j2-Ff6" secondAttribute="trailing" constant="-12" id="jCb-Wn-4H8"/>
+                    <constraint firstItem="bRI-j2-Ff6" firstAttribute="top" secondItem="Qvk-6X-d3C" secondAttribute="top" id="lfD-zd-t24"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="carImageView" destination="bRI-j2-Ff6" id="zSE-BC-Fe0"/>
+                <outlet property="carNameLabel" destination="HtB-YB-TBT" id="faq-ga-f8M"/>
+                <outlet property="compareLabel" destination="qW4-3Z-4VO" id="3XK-dY-Dxp"/>
+                <outlet property="priceAdviceLabel" destination="ezr-3h-9FM" id="t9r-xs-pyR"/>
+                <outlet property="registerDriveLabel" destination="VMZ-KL-zVz" id="LPD-MN-9uB"/>
+                <outlet property="topContraint" destination="c3y-Hn-Pnh" id="R3T-b3-vAR"/>
+            </connections>
+            <point key="canvasLocation" x="426" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="detailcar" width="1125" height="1125"/>
+        <image name="icon_advice" width="36" height="36"/>
+        <image name="icon_back" width="24" height="24"/>
+        <image name="icon_compare" width="36" height="36"/>
+        <image name="icon_download" width="24" height="24"/>
+        <image name="icon_drive" width="36" height="36"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookGuidanceCollectionCell" id="B8y-RD-Q2h" customClass="BookGuidanceCollectionCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book1" translatesAutoresizingMaskIntoConstraints="NO" id="B2w-sz-Xt8">
+                        <rect key="frame" x="7.5" y="5" width="135" height="190"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="190" id="OaV-Pu-Tfz"/>
+                            <constraint firstAttribute="width" constant="135" id="c1U-Vm-slC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aE6-uL-8eI" userLabel="TitleLabel">
+                        <rect key="frame" x="35.5" y="29" width="95" height="19"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car2" translatesAutoresizingMaskIntoConstraints="NO" id="qu0-VA-KkT">
+                        <rect key="frame" x="27.5" y="96" width="111" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="qvd-z4-0Y7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="aE6-uL-8eI" firstAttribute="trailing" secondItem="B2w-sz-Xt8" secondAttribute="trailing" constant="-12" id="Fcd-T6-rnm"/>
+                <constraint firstItem="aE6-uL-8eI" firstAttribute="top" secondItem="B2w-sz-Xt8" secondAttribute="top" constant="24" id="GQR-Hb-jEm"/>
+                <constraint firstItem="B2w-sz-Xt8" firstAttribute="centerX" secondItem="fuv-Hg-Tqw" secondAttribute="centerX" id="J7t-dr-PMt"/>
+                <constraint firstItem="aE6-uL-8eI" firstAttribute="leading" secondItem="B2w-sz-Xt8" secondAttribute="leading" constant="28" id="Y45-ep-poW"/>
+                <constraint firstItem="qu0-VA-KkT" firstAttribute="bottom" secondItem="B2w-sz-Xt8" secondAttribute="bottom" constant="-24" id="YZg-aw-hMv"/>
+                <constraint firstItem="qu0-VA-KkT" firstAttribute="leading" secondItem="B2w-sz-Xt8" secondAttribute="leading" constant="20" id="l39-l1-Wtg"/>
+                <constraint firstItem="qu0-VA-KkT" firstAttribute="trailing" secondItem="B2w-sz-Xt8" secondAttribute="trailing" constant="-4" id="rqr-lS-zOb"/>
+                <constraint firstItem="B2w-sz-Xt8" firstAttribute="centerY" secondItem="fuv-Hg-Tqw" secondAttribute="centerY" id="vK8-fU-mql"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fuv-Hg-Tqw"/>
+            <size key="customSize" width="375" height="202"/>
+            <connections>
+                <outlet property="bgImage" destination="B2w-sz-Xt8" id="iho-Yo-3pB"/>
+                <outlet property="carImage" destination="qu0-VA-KkT" id="Zf2-ht-e9V"/>
+                <outlet property="titleLabel" destination="aE6-uL-8eI" id="odB-Xe-EZP"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="118"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="book1" width="161" height="217"/>
+        <image name="car2" width="504" height="273"/>
+    </resources>
+</document>

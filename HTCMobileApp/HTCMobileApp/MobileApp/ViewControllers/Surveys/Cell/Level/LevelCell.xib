@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LevelCell" rowHeight="88" id="KGk-i7-Jjw" customClass="LevelCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A1. Quý khách đánh giá như thế nào về mức độ hài lòng chung đối với Đại lý? (*)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djn-bc-CIr">
+                        <rect key="frame" x="0.0" y="8" width="320" height="33"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="14"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9AC-Ng-5Da">
+                        <rect key="frame" x="0.0" y="49" width="320" height="35"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yqf-v2-m6i">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfa-uY-fDz">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="35"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="12"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="point_selected"/>
+                                        <connections>
+                                            <action selector="onSelectedPoint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="L7e-UG-oKM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70n-v6-hDL">
+                                        <rect key="frame" x="32" y="0.0" width="32" height="35"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="12"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="point_selected"/>
+                                        <connections>
+                                            <action selector="onSelectedPoint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mBw-Ja-2qQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l5-De-W1x">
+                                        <rect key="frame" x="64" y="0.0" width="32" height="35"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="12"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="point_selected"/>
+                                        <connections>
+                                            <action selector="onSelectedPoint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jg8-AO-7DP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wr5-vW-7BW">
+                                        <rect key="frame" x="96" y="0.0" width="32" height="35"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="12"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="point_selected"/>
+                                        <connections>
+                                            <action selector="onSelectedPoint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mnn-jw-YSt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmB-Qi-YtG">
+                                        <rect key="frame" x="128" y="0.0" width="32" height="35"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="12"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="point_selected"/>
+                                        <connections>
+                                            <action selector="onSelectedPoint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Imt-eq-2sg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXa-H6-5Oc">
+                                        <rect key="frame" x="160" y="0.0" width="32" height="35"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="12"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="point_selected"/>
+                                        <connections>
+                                            <action selector="onSelectedPoint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MVb-UH-jek"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJy-NE-w1q">
+                                        <rect key="frame" x="192" y="0.0" width="32" height="35"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="12"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="point_selected"/>
+                                        <connections>
+                                            <action selector="onSelectedPoint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dUY-mq-dUq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb3-uD-034">
+                                        <rect key="frame" x="224" y="0.0" width="32" height="35"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="12"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="point_selected"/>
+                                        <connections>
+                                            <action selector="onSelectedPoint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Riw-7z-byV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aR-AO-yas">
+                                        <rect key="frame" x="256" y="0.0" width="32" height="35"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="12"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="point_selected"/>
+                                        <connections>
+                                            <action selector="onSelectedPoint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="LRC-in-Dkl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJH-9v-i6l">
+                                        <rect key="frame" x="288" y="0.0" width="32" height="35"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="12"/>
+                                        <state key="normal" title="10">
+                                            <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="point_selected"/>
+                                        <connections>
+                                            <action selector="onSelectedPoint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Gyb-3S-qV9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yqf-v2-m6i" firstAttribute="leading" secondItem="9AC-Ng-5Da" secondAttribute="leading" id="1E1-hD-agc"/>
+                            <constraint firstAttribute="height" constant="35" id="bXh-t6-q7t"/>
+                            <constraint firstAttribute="bottom" secondItem="Yqf-v2-m6i" secondAttribute="bottom" id="eSs-cw-UtX"/>
+                            <constraint firstAttribute="trailing" secondItem="Yqf-v2-m6i" secondAttribute="trailing" id="lVL-ZK-pvk"/>
+                            <constraint firstItem="Yqf-v2-m6i" firstAttribute="top" secondItem="9AC-Ng-5Da" secondAttribute="top" id="wmm-AC-9Ce"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9AC-Ng-5Da" secondAttribute="bottom" constant="11.5" id="81N-3H-iUc"/>
+                    <constraint firstItem="9AC-Ng-5Da" firstAttribute="leading" secondItem="Djn-bc-CIr" secondAttribute="leading" id="HqN-7e-WZx"/>
+                    <constraint firstItem="9AC-Ng-5Da" firstAttribute="trailing" secondItem="Djn-bc-CIr" secondAttribute="trailing" id="Ltw-4J-0NH"/>
+                    <constraint firstItem="9AC-Ng-5Da" firstAttribute="top" secondItem="Djn-bc-CIr" secondAttribute="bottom" constant="8" id="PxB-yM-A0L"/>
+                    <constraint firstItem="Djn-bc-CIr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="pon-Xs-3PK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="Djn-bc-CIr" secondAttribute="trailing" id="9V7-yt-4LI"/>
+                <constraint firstItem="Djn-bc-CIr" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="kJ5-Ik-Do9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="questionLabel" destination="Djn-bc-CIr" id="cdS-b1-UWm"/>
+                <outletCollection property="buttons" destination="hb3-uD-034" collectionClass="NSMutableArray" id="Nps-SX-8u0"/>
+                <outletCollection property="buttons" destination="1l5-De-W1x" collectionClass="NSMutableArray" id="vNE-3B-lnG"/>
+                <outletCollection property="buttons" destination="XXa-H6-5Oc" collectionClass="NSMutableArray" id="e8O-Pp-jcQ"/>
+                <outletCollection property="buttons" destination="Vfa-uY-fDz" collectionClass="NSMutableArray" id="Dbd-xa-iRK"/>
+                <outletCollection property="buttons" destination="YJH-9v-i6l" collectionClass="NSMutableArray" id="EkH-4G-9kc"/>
+                <outletCollection property="buttons" destination="70n-v6-hDL" collectionClass="NSMutableArray" id="08b-4y-oDI"/>
+                <outletCollection property="buttons" destination="nJy-NE-w1q" collectionClass="NSMutableArray" id="Awf-bd-FgX"/>
+                <outletCollection property="buttons" destination="7aR-AO-yas" collectionClass="NSMutableArray" id="VpL-8F-Hbl"/>
+                <outletCollection property="buttons" destination="rmB-Qi-YtG" collectionClass="NSMutableArray" id="F4m-cX-KMP"/>
+                <outletCollection property="buttons" destination="Wr5-vW-7BW" collectionClass="NSMutableArray" id="gb7-Fr-Su6"/>
+            </connections>
+            <point key="canvasLocation" x="145.59999999999999" y="-145.72713643178412"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="point_selected" width="32" height="32"/>
+    </resources>
+</document>

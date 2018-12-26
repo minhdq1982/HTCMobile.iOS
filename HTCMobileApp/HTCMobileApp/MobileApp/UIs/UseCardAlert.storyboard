@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Bold.ttf">
+            <string>HyundaiSansVnHeadOffice-Bold</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Use Card Alert View Controller-->
+        <scene sceneID="uEj-aG-BzZ">
+            <objects>
+                <viewController storyboardIdentifier="UseCardAlertViewController" id="3a0-h1-eNi" customClass="UseCardAlertViewController" customModule="HTCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4oJ-gk-6nI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVY-YZ-7sy">
+                                <rect key="frame" x="0.0" y="91.5" width="375" height="298"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="use_card_bg_gold" translatesAutoresizingMaskIntoConstraints="NO" id="t7p-3o-Umf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="298"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mxr-T6-d2O">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="298"/>
+                                        <subviews>
+                                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="jpe-QQ-ZTB">
+                                                <rect key="frame" x="40" y="79" width="295" height="149"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUk-NX-X6G" customClass="Barcode128View" customModule="Barcode128View">
+                                                        <rect key="frame" x="24" y="24" width="247" height="87"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showCode" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsR-JS-tCc">
+                                                        <rect key="frame" x="4" y="111" width="287" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="FtZ-9z-Me7"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="UsR-JS-tCc" firstAttribute="leading" secondItem="jpe-QQ-ZTB" secondAttribute="leading" constant="4" id="0yF-Y2-4Y2"/>
+                                                    <constraint firstItem="mUk-NX-X6G" firstAttribute="top" secondItem="jpe-QQ-ZTB" secondAttribute="top" constant="24" id="Iav-Vc-oPH"/>
+                                                    <constraint firstItem="mUk-NX-X6G" firstAttribute="leading" secondItem="jpe-QQ-ZTB" secondAttribute="leading" constant="24" id="Krf-2p-ATO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="UsR-JS-tCc" secondAttribute="bottom" constant="18" id="R7u-uz-OCu"/>
+                                                    <constraint firstAttribute="width" secondItem="jpe-QQ-ZTB" secondAttribute="height" multiplier="295:149" id="owF-XK-g3J"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UsR-JS-tCc" secondAttribute="trailing" constant="4" id="svT-Dm-tIh"/>
+                                                    <constraint firstItem="mUk-NX-X6G" firstAttribute="centerX" secondItem="jpe-QQ-ZTB" secondAttribute="centerX" id="uZm-kr-ewf"/>
+                                                    <constraint firstItem="UsR-JS-tCc" firstAttribute="top" secondItem="mUk-NX-X6G" secondAttribute="bottom" id="wbQ-xI-kKv"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyundai Giải Phóng" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jC8-fN-epq">
+                                                <rect key="frame" x="40" y="20" width="190" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="9s0-eW-pZx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3d-bh-nBV">
+                                                <rect key="frame" x="238" y="11" width="97" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="97" id="AVk-ug-D7G"/>
+                                                    <constraint firstAttribute="height" constant="29" id="ho9-Ev-YnF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="14"/>
+                                                <state key="normal" title="Ẩn thẻ" backgroundImage="use_card_gold">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onClose:" destination="3a0-h1-eNi" eventType="touchUpInside" id="IXO-3h-9Ix"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="jpe-QQ-ZTB" secondAttribute="trailing" constant="40" id="1EA-vE-Tcj"/>
+                                            <constraint firstItem="w3d-bh-nBV" firstAttribute="top" secondItem="Mxr-T6-d2O" secondAttribute="top" constant="11" id="9M0-pC-lsj"/>
+                                            <constraint firstItem="jC8-fN-epq" firstAttribute="leading" secondItem="Mxr-T6-d2O" secondAttribute="leading" constant="40" id="CmO-AN-ibU"/>
+                                            <constraint firstItem="jC8-fN-epq" firstAttribute="top" secondItem="Mxr-T6-d2O" secondAttribute="top" constant="20" id="YQo-qm-qp5"/>
+                                            <constraint firstItem="jpe-QQ-ZTB" firstAttribute="leading" secondItem="Mxr-T6-d2O" secondAttribute="leading" constant="40" id="c0b-nM-crN"/>
+                                            <constraint firstItem="w3d-bh-nBV" firstAttribute="leading" secondItem="jC8-fN-epq" secondAttribute="trailing" constant="8" id="hwg-mv-l77"/>
+                                            <constraint firstItem="jpe-QQ-ZTB" firstAttribute="top" secondItem="jC8-fN-epq" secondAttribute="bottom" constant="24" id="zOE-hC-kmr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="t7p-3o-Umf" secondAttribute="trailing" id="6fS-ei-wqU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mxr-T6-d2O" secondAttribute="trailing" id="6xB-Ww-o4P"/>
+                                    <constraint firstAttribute="trailing" secondItem="w3d-bh-nBV" secondAttribute="trailing" constant="40" id="KTX-sY-ryS"/>
+                                    <constraint firstItem="Mxr-T6-d2O" firstAttribute="top" secondItem="FVY-YZ-7sy" secondAttribute="top" id="RrP-ma-Wvx"/>
+                                    <constraint firstAttribute="width" secondItem="FVY-YZ-7sy" secondAttribute="height" multiplier="375:298" id="Zo1-P7-mLd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mxr-T6-d2O" secondAttribute="bottom" id="bfd-GE-SFb"/>
+                                    <constraint firstItem="t7p-3o-Umf" firstAttribute="top" secondItem="FVY-YZ-7sy" secondAttribute="top" id="lDW-bT-ab2"/>
+                                    <constraint firstItem="t7p-3o-Umf" firstAttribute="leading" secondItem="FVY-YZ-7sy" secondAttribute="leading" id="mdU-zf-uge"/>
+                                    <constraint firstItem="Mxr-T6-d2O" firstAttribute="leading" secondItem="FVY-YZ-7sy" secondAttribute="leading" id="oms-v3-AgW"/>
+                                    <constraint firstAttribute="bottom" secondItem="t7p-3o-Umf" secondAttribute="bottom" id="zm8-MG-yho"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FVY-YZ-7sy" firstAttribute="centerY" secondItem="9jf-Ax-fa1" secondAttribute="centerY" multiplier="0.7" id="JSZ-Pi-vVN"/>
+                            <constraint firstItem="9jf-Ax-fa1" firstAttribute="trailing" secondItem="FVY-YZ-7sy" secondAttribute="trailing" id="QcQ-el-3Gb"/>
+                            <constraint firstItem="FVY-YZ-7sy" firstAttribute="leading" secondItem="9jf-Ax-fa1" secondAttribute="leading" id="oh2-CW-NnF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9jf-Ax-fa1"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="FVY-YZ-7sy" id="ISk-gj-w5L"/>
+                        <outlet property="barCodeView" destination="mUk-NX-X6G" id="v0J-xt-OAa"/>
+                        <outlet property="bgImageView" destination="t7p-3o-Umf" id="PVJ-MV-jnu"/>
+                        <outlet property="cardAddressLabel" destination="jC8-fN-epq" id="6B8-Mf-3zH"/>
+                        <outlet property="cardNoLabel" destination="UsR-JS-tCc" id="syJ-KO-P9i"/>
+                        <outlet property="doneButon" destination="w3d-bh-nBV" id="A8E-vm-vWX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O15-6x-5H9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="110.19490254872565"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="use_card_bg_gold" width="369" height="298"/>
+        <image name="use_card_gold" width="97" height="29"/>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarVersionCell" id="mFp-VL-pRw" customClass="CarVersionCell" customModule="HTCMobileApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mFp-VL-pRw" id="BME-MO-vH0">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC8-pR-zIl">
+                        <rect key="frame" x="12" y="6" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="UZ2-mc-sSs"/>
+                            <constraint firstAttribute="width" constant="32" id="trw-UP-SR5"/>
+                        </constraints>
+                        <state key="normal" image="icon_radio"/>
+                        <state key="selected" image="icon_radio_checked"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q21-A9-gSW">
+                        <rect key="frame" x="56" y="0.0" width="307" height="44"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZC8-pR-zIl" firstAttribute="leading" secondItem="BME-MO-vH0" secondAttribute="leading" constant="12" id="eIf-7p-d72"/>
+                    <constraint firstItem="q21-A9-gSW" firstAttribute="leading" secondItem="ZC8-pR-zIl" secondAttribute="trailing" constant="12" id="to0-jN-1C2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="q21-A9-gSW" firstAttribute="top" secondItem="mFp-VL-pRw" secondAttribute="top" id="3Pw-Yz-9rl"/>
+                <constraint firstItem="ZC8-pR-zIl" firstAttribute="centerY" secondItem="mFp-VL-pRw" secondAttribute="centerY" id="LNa-hU-UM7"/>
+                <constraint firstAttribute="bottom" secondItem="q21-A9-gSW" secondAttribute="bottom" id="ZJX-BA-rsB"/>
+                <constraint firstAttribute="trailing" secondItem="q21-A9-gSW" secondAttribute="trailing" constant="12" id="zPk-XZ-KIe"/>
+            </constraints>
+            <connections>
+                <outlet property="checkButton" destination="ZC8-pR-zIl" id="qL7-Fg-Gdt"/>
+                <outlet property="versionNameLabel" destination="q21-A9-gSW" id="NvO-mc-jM4"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_radio" width="32" height="32"/>
+        <image name="icon_radio_checked" width="32" height="32"/>
+    </resources>
+</document>

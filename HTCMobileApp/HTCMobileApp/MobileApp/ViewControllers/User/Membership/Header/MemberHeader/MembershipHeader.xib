@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MembershipHeader" id="KGk-i7-Jjw" customClass="MembershipHeader" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyundai Giải Phóng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdV-tB-JBc">
+                        <rect key="frame" x="0.0" y="18" width="158.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLm-LW-v9T">
+                        <rect key="frame" x="296" y="17" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="S8q-34-LQ6"/>
+                            <constraint firstAttribute="height" constant="24" id="yA4-qR-7yO"/>
+                        </constraints>
+                        <state key="normal" image="dropdown"/>
+                        <connections>
+                            <action selector="onExpand:" destination="-1" eventType="touchUpInside" id="NeF-8f-L3W"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFg-lK-Tad" userLabel="SeparatorView">
+                        <rect key="frame" x="0.0" y="58" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="FkF-zF-Bae"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qFg-lK-Tad" secondAttribute="bottom" id="Hwd-Gr-NuA"/>
+                    <constraint firstItem="QdV-tB-JBc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Nr2-wk-Ugb"/>
+                    <constraint firstAttribute="trailing" secondItem="qFg-lK-Tad" secondAttribute="trailing" id="WdS-W0-pbg"/>
+                    <constraint firstAttribute="trailing" secondItem="tLm-LW-v9T" secondAttribute="trailing" id="kTn-pD-tlG"/>
+                    <constraint firstItem="qFg-lK-Tad" firstAttribute="top" secondItem="tLm-LW-v9T" secondAttribute="bottom" constant="17" id="mvk-r3-PGq"/>
+                    <constraint firstItem="tLm-LW-v9T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="pqx-LC-43a"/>
+                    <constraint firstItem="QdV-tB-JBc" firstAttribute="centerY" secondItem="tLm-LW-v9T" secondAttribute="centerY" id="uaI-HO-GrN"/>
+                    <constraint firstItem="qFg-lK-Tad" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yVc-Ms-GPi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="brandLabel" destination="QdV-tB-JBc" id="0rD-vY-7zP"/>
+                <outlet property="expandButton" destination="tLm-LW-v9T" id="7X8-sz-MgG"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="140.32983508245877"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropdown" width="32" height="32"/>
+    </resources>
+</document>

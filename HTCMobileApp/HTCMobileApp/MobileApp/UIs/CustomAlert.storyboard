@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Bold.ttf">
+            <string>HyundaiSansVnHeadOffice-Bold</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Card Alert View Controller-->
+        <scene sceneID="qMg-qQ-1og">
+            <objects>
+                <viewController storyboardIdentifier="AddCardAlertViewController" id="NBD-S7-imf" userLabel="Add Card Alert View Controller" customClass="AddCardAlertViewController" customModule="HTCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e7g-QK-Dg2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b06-R5-cUG">
+                                <rect key="frame" x="12" y="128.5" width="351" height="430"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_add_card_success" translatesAutoresizingMaskIntoConstraints="NO" id="XvX-OG-4iu">
+                                        <rect key="frame" x="125.5" y="34" width="100" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="jdW-pm-bxR"/>
+                                            <constraint firstAttribute="height" constant="70" id="jxz-1L-Rkx"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyundai Giải Phóng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2B-MW-NCU">
+                                        <rect key="frame" x="199" y="171.5" width="140" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="NjQ-ov-Nai"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABCABCABC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtQ-4v-C9h">
+                                        <rect key="frame" x="247" y="204.5" width="92" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Ttj-at-gXl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Đình Tú" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdc-Sn-520">
+                                        <rect key="frame" x="227" y="237.5" width="112" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="vDC-cM-93K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elantra Sport 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLh-el-yhO">
+                                        <rect key="frame" x="207" y="270.5" width="132" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="osj-I3-J7a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30E-33049" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcZ-jJ-tTs">
+                                        <rect key="frame" x="261" y="303.5" width="78" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Pff-hK-e4W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8J9-Ak-7hN">
+                                        <rect key="frame" x="81" y="362" width="189" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.15686274509803921" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="cQb-Hg-r31"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Bold" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                        <state key="normal" title="Hoàn thành">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onDone:" destination="NBD-S7-imf" eventType="touchUpInside" id="7Mf-3M-gPE"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đại lý:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd1-Xt-qik">
+                                        <rect key="frame" x="12" y="172.5" width="42" height="19"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                        <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên khách hàng:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYV-gG-ziX">
+                                        <rect key="frame" x="12" y="238.5" width="115" height="19"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                        <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mẫu xe:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNG-as-2is">
+                                        <rect key="frame" x="12" y="271.5" width="54.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                        <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biển số xe:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4i-54-hOW">
+                                        <rect key="frame" x="12" y="304.5" width="73" height="19"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                        <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mã số thẻ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDG-wS-tSN">
+                                        <rect key="frame" x="12" y="205.5" width="72" height="19"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                        <color key="textColor" red="0.27058823529411763" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="XvX-OG-4iu" firstAttribute="centerX" secondItem="b06-R5-cUG" secondAttribute="centerX" id="1pQ-qS-evU"/>
+                                    <constraint firstItem="Tdc-Sn-520" firstAttribute="trailing" secondItem="gtQ-4v-C9h" secondAttribute="trailing" id="4Fh-Rt-cjV"/>
+                                    <constraint firstAttribute="height" constant="430" id="4Sm-AF-hD0"/>
+                                    <constraint firstItem="X4i-54-hOW" firstAttribute="leading" secondItem="mNG-as-2is" secondAttribute="leading" id="7SB-6y-G5O"/>
+                                    <constraint firstItem="mNG-as-2is" firstAttribute="leading" secondItem="iYV-gG-ziX" secondAttribute="leading" id="7jk-k4-CmT"/>
+                                    <constraint firstItem="gtQ-4v-C9h" firstAttribute="trailing" secondItem="J2B-MW-NCU" secondAttribute="trailing" id="Gm6-xL-X1o"/>
+                                    <constraint firstItem="cLh-el-yhO" firstAttribute="top" secondItem="Tdc-Sn-520" secondAttribute="bottom" constant="12" id="JdW-8c-cvj"/>
+                                    <constraint firstItem="YDG-wS-tSN" firstAttribute="leading" secondItem="Jd1-Xt-qik" secondAttribute="leading" id="K4P-Tz-BWv"/>
+                                    <constraint firstItem="iYV-gG-ziX" firstAttribute="centerY" secondItem="Tdc-Sn-520" secondAttribute="centerY" id="Mh6-5t-Ekm"/>
+                                    <constraint firstItem="XvX-OG-4iu" firstAttribute="top" secondItem="b06-R5-cUG" secondAttribute="top" constant="34" id="MsG-aN-T0D"/>
+                                    <constraint firstItem="8J9-Ak-7hN" firstAttribute="leading" secondItem="b06-R5-cUG" secondAttribute="leading" constant="81" id="NU8-yf-d9L"/>
+                                    <constraint firstItem="8J9-Ak-7hN" firstAttribute="centerX" secondItem="b06-R5-cUG" secondAttribute="centerX" id="PGo-ZZ-nG0"/>
+                                    <constraint firstAttribute="trailing" secondItem="J2B-MW-NCU" secondAttribute="trailing" constant="12" id="Qmz-Sb-3Vk"/>
+                                    <constraint firstItem="cLh-el-yhO" firstAttribute="trailing" secondItem="J2B-MW-NCU" secondAttribute="trailing" id="RvF-4C-kfu"/>
+                                    <constraint firstItem="X4i-54-hOW" firstAttribute="centerY" secondItem="BcZ-jJ-tTs" secondAttribute="centerY" id="ZiP-PU-phb"/>
+                                    <constraint firstItem="Jd1-Xt-qik" firstAttribute="centerY" secondItem="J2B-MW-NCU" secondAttribute="centerY" id="dzH-FE-hmq"/>
+                                    <constraint firstItem="BcZ-jJ-tTs" firstAttribute="trailing" secondItem="cLh-el-yhO" secondAttribute="trailing" id="e4D-M6-R0C"/>
+                                    <constraint firstItem="iYV-gG-ziX" firstAttribute="leading" secondItem="YDG-wS-tSN" secondAttribute="leading" id="gHb-tq-1lb"/>
+                                    <constraint firstItem="Tdc-Sn-520" firstAttribute="top" secondItem="gtQ-4v-C9h" secondAttribute="bottom" constant="12" id="oan-dT-go9"/>
+                                    <constraint firstItem="Jd1-Xt-qik" firstAttribute="leading" secondItem="b06-R5-cUG" secondAttribute="leading" constant="12" id="qrC-wo-pwC"/>
+                                    <constraint firstAttribute="bottom" secondItem="8J9-Ak-7hN" secondAttribute="bottom" constant="24" id="rD4-TI-gZO"/>
+                                    <constraint firstItem="BcZ-jJ-tTs" firstAttribute="top" secondItem="cLh-el-yhO" secondAttribute="bottom" constant="12" id="rn6-qA-dyz"/>
+                                    <constraint firstItem="gtQ-4v-C9h" firstAttribute="top" secondItem="J2B-MW-NCU" secondAttribute="bottom" constant="12" id="s2L-Tz-Eq0"/>
+                                    <constraint firstItem="mNG-as-2is" firstAttribute="centerY" secondItem="cLh-el-yhO" secondAttribute="centerY" id="s5t-E6-nvH"/>
+                                    <constraint firstItem="YDG-wS-tSN" firstAttribute="centerY" secondItem="gtQ-4v-C9h" secondAttribute="centerY" id="zdj-Yv-IdH"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thêm thẻ hội viên thành công" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6x5-hS-slq">
+                                <rect key="frame" x="69.5" y="252.5" width="236.5" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b06-R5-cUG" firstAttribute="leading" secondItem="8HH-9u-Dkl" secondAttribute="leading" constant="12" id="AuR-80-3Kz"/>
+                            <constraint firstItem="8HH-9u-Dkl" firstAttribute="trailing" secondItem="b06-R5-cUG" secondAttribute="trailing" constant="12" id="CUv-hu-Aut"/>
+                            <constraint firstItem="b06-R5-cUG" firstAttribute="centerY" secondItem="8HH-9u-Dkl" secondAttribute="centerY" id="Puf-ho-Fyx"/>
+                            <constraint firstItem="J2B-MW-NCU" firstAttribute="top" secondItem="6x5-hS-slq" secondAttribute="bottom" constant="26" id="a9x-dy-4oS"/>
+                            <constraint firstItem="6x5-hS-slq" firstAttribute="top" secondItem="XvX-OG-4iu" secondAttribute="bottom" constant="20" id="jRU-oN-aSf"/>
+                            <constraint firstItem="6x5-hS-slq" firstAttribute="centerX" secondItem="b06-R5-cUG" secondAttribute="centerX" id="jel-fb-VlV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8HH-9u-Dkl"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="b06-R5-cUG" id="1sU-O4-XIe"/>
+                        <outlet property="brandLabel" destination="J2B-MW-NCU" id="eSZ-a0-ka5"/>
+                        <outlet property="carnameLabel" destination="cLh-el-yhO" id="uZh-Xa-U5x"/>
+                        <outlet property="licensePlateLabel" destination="BcZ-jJ-tTs" id="kOf-bT-HJg"/>
+                        <outlet property="titleLabel" destination="6x5-hS-slq" id="ZKh-wq-K4h"/>
+                        <outlet property="usernameLabel" destination="Tdc-Sn-520" id="rdo-OL-hnZ"/>
+                        <outlet property="vinnoLabel" destination="gtQ-4v-C9h" id="VPg-FN-mwZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4g-Rm-Yxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242.40000000000001" y="-44.527736131934034"/>
+        </scene>
+        <!--Choose Avatar Alert View Controller-->
+        <scene sceneID="3Dx-r4-yJu">
+            <objects>
+                <viewController storyboardIdentifier="ChooseAvatarAlertViewController" id="kFO-4a-UcZ" customClass="ChooseAvatarAlertViewController" customModule="HTCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="48h-91-BwT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SgA-sc-g0K">
+                                <rect key="frame" x="12" y="260.5" width="351" height="166"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6UN-4i-mYY">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn ảnh từ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeY-Bt-3ew">
+                                                <rect key="frame" x="12" y="17" width="98" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="EGM-ei-LZ3"/>
+                                            <constraint firstItem="TeY-Bt-3ew" firstAttribute="leading" secondItem="6UN-4i-mYY" secondAttribute="leading" constant="12" id="Gzh-Qx-tJG"/>
+                                            <constraint firstItem="TeY-Bt-3ew" firstAttribute="centerY" secondItem="6UN-4i-mYY" secondAttribute="centerY" id="ca6-wa-0Le"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqO-t8-KlN">
+                                        <rect key="frame" x="0.0" y="55" width="351" height="55"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file" translatesAutoresizingMaskIntoConstraints="NO" id="YtH-Um-bgu">
+                                                <rect key="frame" x="12" y="15.5" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="My0-77-AEH"/>
+                                                    <constraint firstAttribute="width" constant="24" id="xQd-qG-f79"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thư viện ảnh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj3-DE-xjd">
+                                                <rect key="frame" x="52" y="17" width="100.5" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6K-Te-U3V">
+                                                <rect key="frame" x="0.0" y="0.0" width="351" height="55"/>
+                                                <connections>
+                                                    <action selector="gotoLibrary:" destination="kFO-4a-UcZ" eventType="touchUpInside" id="h2w-nO-aJR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="U6K-Te-U3V" secondAttribute="trailing" id="3Y2-07-25b"/>
+                                            <constraint firstItem="U6K-Te-U3V" firstAttribute="top" secondItem="SqO-t8-KlN" secondAttribute="top" id="D8d-nd-WOl"/>
+                                            <constraint firstItem="YtH-Um-bgu" firstAttribute="leading" secondItem="SqO-t8-KlN" secondAttribute="leading" constant="12" id="IWY-OA-UVo"/>
+                                            <constraint firstItem="yj3-DE-xjd" firstAttribute="centerY" secondItem="SqO-t8-KlN" secondAttribute="centerY" id="Qte-fl-hx4"/>
+                                            <constraint firstItem="YtH-Um-bgu" firstAttribute="centerY" secondItem="SqO-t8-KlN" secondAttribute="centerY" id="ZI3-5I-gU6"/>
+                                            <constraint firstAttribute="bottom" secondItem="U6K-Te-U3V" secondAttribute="bottom" id="aqb-jb-0Qc"/>
+                                            <constraint firstAttribute="height" constant="55" id="lQB-w4-Jx2"/>
+                                            <constraint firstItem="yj3-DE-xjd" firstAttribute="leading" secondItem="YtH-Um-bgu" secondAttribute="trailing" constant="16" id="ohM-s9-vwK"/>
+                                            <constraint firstItem="U6K-Te-U3V" firstAttribute="leading" secondItem="SqO-t8-KlN" secondAttribute="leading" id="p92-M3-9a8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8x4-aa-sDl" userLabel="SeparatorView">
+                                        <rect key="frame" x="0.0" y="110" width="351" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Dhe-DM-dnL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7NZ-ZB-q4G">
+                                        <rect key="frame" x="0.0" y="111" width="351" height="55"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="7a9-se-n5Y">
+                                                <rect key="frame" x="12" y="15.5" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="5j6-vK-Wra"/>
+                                                    <constraint firstAttribute="width" constant="24" id="sfX-aI-cbc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máy ảnh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVm-5t-jWt">
+                                                <rect key="frame" x="48" y="17" width="69" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4g-n2-bqh">
+                                                <rect key="frame" x="0.0" y="0.0" width="351" height="55"/>
+                                                <connections>
+                                                    <action selector="gotoCamera:" destination="kFO-4a-UcZ" eventType="touchUpInside" id="fzx-0h-6Co"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="DZK-nu-8wS"/>
+                                            <constraint firstItem="MVm-5t-jWt" firstAttribute="leading" secondItem="7a9-se-n5Y" secondAttribute="trailing" constant="12" id="R9n-R3-eWW"/>
+                                            <constraint firstItem="MVm-5t-jWt" firstAttribute="centerY" secondItem="7NZ-ZB-q4G" secondAttribute="centerY" id="RrX-sp-XeU"/>
+                                            <constraint firstAttribute="bottom" secondItem="i4g-n2-bqh" secondAttribute="bottom" id="aVd-Y8-4hw"/>
+                                            <constraint firstAttribute="trailing" secondItem="i4g-n2-bqh" secondAttribute="trailing" id="bww-oW-d0A"/>
+                                            <constraint firstItem="i4g-n2-bqh" firstAttribute="top" secondItem="7NZ-ZB-q4G" secondAttribute="top" id="dFs-6u-H8P"/>
+                                            <constraint firstItem="7a9-se-n5Y" firstAttribute="centerY" secondItem="7NZ-ZB-q4G" secondAttribute="centerY" id="g8N-DP-zX3"/>
+                                            <constraint firstItem="i4g-n2-bqh" firstAttribute="leading" secondItem="7NZ-ZB-q4G" secondAttribute="leading" id="kx8-5n-8He"/>
+                                            <constraint firstItem="7a9-se-n5Y" firstAttribute="leading" secondItem="7NZ-ZB-q4G" secondAttribute="leading" constant="12" id="ll9-TU-saU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8x4-aa-sDl" firstAttribute="top" secondItem="SqO-t8-KlN" secondAttribute="bottom" id="5PM-eF-e6f"/>
+                                    <constraint firstItem="7NZ-ZB-q4G" firstAttribute="top" secondItem="8x4-aa-sDl" secondAttribute="bottom" id="8eb-sa-jjH"/>
+                                    <constraint firstAttribute="trailing" secondItem="6UN-4i-mYY" secondAttribute="trailing" id="PvP-5N-hLQ"/>
+                                    <constraint firstItem="7NZ-ZB-q4G" firstAttribute="leading" secondItem="SgA-sc-g0K" secondAttribute="leading" id="QZh-bX-0PN"/>
+                                    <constraint firstItem="8x4-aa-sDl" firstAttribute="leading" secondItem="SqO-t8-KlN" secondAttribute="leading" id="ULu-M5-hZB"/>
+                                    <constraint firstItem="SqO-t8-KlN" firstAttribute="leading" secondItem="6UN-4i-mYY" secondAttribute="leading" id="bkf-hP-tMl"/>
+                                    <constraint firstItem="6UN-4i-mYY" firstAttribute="leading" secondItem="SgA-sc-g0K" secondAttribute="leading" id="fz8-jm-FTM"/>
+                                    <constraint firstItem="SqO-t8-KlN" firstAttribute="trailing" secondItem="6UN-4i-mYY" secondAttribute="trailing" id="h7v-Sk-0CN"/>
+                                    <constraint firstItem="8x4-aa-sDl" firstAttribute="trailing" secondItem="SqO-t8-KlN" secondAttribute="trailing" id="ppJ-MF-3y1"/>
+                                    <constraint firstAttribute="height" constant="166" id="tBl-Ai-DKv"/>
+                                    <constraint firstAttribute="trailing" secondItem="7NZ-ZB-q4G" secondAttribute="trailing" id="vpf-pg-LtW"/>
+                                    <constraint firstItem="6UN-4i-mYY" firstAttribute="top" secondItem="SgA-sc-g0K" secondAttribute="top" id="zJ3-38-O6l"/>
+                                    <constraint firstItem="SqO-t8-KlN" firstAttribute="top" secondItem="6UN-4i-mYY" secondAttribute="bottom" id="zTb-M3-MSv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SgA-sc-g0K" firstAttribute="leading" secondItem="JQz-Vi-iwH" secondAttribute="leading" constant="12" id="Jf8-hW-zzX"/>
+                            <constraint firstItem="SgA-sc-g0K" firstAttribute="centerX" secondItem="JQz-Vi-iwH" secondAttribute="centerX" id="Mt3-EF-Jlj"/>
+                            <constraint firstItem="SgA-sc-g0K" firstAttribute="centerY" secondItem="JQz-Vi-iwH" secondAttribute="centerY" id="k7Q-9y-t3y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JQz-Vi-iwH"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="SgA-sc-g0K" id="m3V-Or-fdI"/>
+                        <outlet property="cameraButton" destination="i4g-n2-bqh" id="fKs-zr-nyO"/>
+                        <outlet property="libraryButton" destination="U6K-Te-U3V" id="tnU-Ie-FXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lx7-Ji-sok" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="-45.42728635682159"/>
+        </scene>
+        <!--Fs Calendar Alert View-->
+        <scene sceneID="YnS-Y1-b8i">
+            <objects>
+                <viewController storyboardIdentifier="FsCalendarAlertView" id="3P4-cY-0zS" customClass="FsCalendarAlertView" customModule="HTCMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oZ5-GV-K2e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mc1-ir-O1O" customClass="FSCalendar">
+                                <rect key="frame" x="24" y="170" width="327" height="347"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UiV-p4-PRQ">
+                                <rect key="frame" x="24" y="120" width="327" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHỌN NGÀY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88F-ME-ikX">
+                                        <rect key="frame" x="112.5" y="14.5" width="102.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.66666666666666663" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Dq-4m-r8x"/>
+                                    <constraint firstItem="88F-ME-ikX" firstAttribute="centerX" secondItem="UiV-p4-PRQ" secondAttribute="centerX" id="9J8-lQ-eiZ"/>
+                                    <constraint firstItem="88F-ME-ikX" firstAttribute="centerY" secondItem="UiV-p4-PRQ" secondAttribute="centerY" id="baU-w9-DVo"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAe-UE-Sej">
+                                <rect key="frame" x="24" y="517" width="327" height="44"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.66666666666666663" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nuh-Tg-nk3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                                <state key="normal" title="Huỷ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UiV-p4-PRQ" firstAttribute="trailing" secondItem="Mc1-ir-O1O" secondAttribute="trailing" id="JQJ-tb-1Rq"/>
+                            <constraint firstItem="Mc1-ir-O1O" firstAttribute="centerY" secondItem="Uvk-uR-Mma" secondAttribute="centerY" id="XaU-Yx-5QP"/>
+                            <constraint firstItem="MAe-UE-Sej" firstAttribute="leading" secondItem="Mc1-ir-O1O" secondAttribute="leading" id="YIk-0O-raz"/>
+                            <constraint firstItem="Mc1-ir-O1O" firstAttribute="top" secondItem="UiV-p4-PRQ" secondAttribute="bottom" id="Zpa-Rb-DDY"/>
+                            <constraint firstItem="Mc1-ir-O1O" firstAttribute="centerX" secondItem="oZ5-GV-K2e" secondAttribute="centerX" id="dNt-wk-g9r"/>
+                            <constraint firstItem="Mc1-ir-O1O" firstAttribute="top" secondItem="Uvk-uR-Mma" secondAttribute="top" constant="150" id="fis-ih-mGY"/>
+                            <constraint firstItem="Uvk-uR-Mma" firstAttribute="trailing" secondItem="Mc1-ir-O1O" secondAttribute="trailing" constant="24" id="nTJ-p2-DGX"/>
+                            <constraint firstItem="MAe-UE-Sej" firstAttribute="trailing" secondItem="Mc1-ir-O1O" secondAttribute="trailing" id="orr-Dx-BuY"/>
+                            <constraint firstItem="UiV-p4-PRQ" firstAttribute="leading" secondItem="Mc1-ir-O1O" secondAttribute="leading" id="uWT-eg-g3Y"/>
+                            <constraint firstItem="MAe-UE-Sej" firstAttribute="top" secondItem="Mc1-ir-O1O" secondAttribute="bottom" id="xNX-Y8-rcq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uvk-uR-Mma"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="Mc1-ir-O1O" id="0UM-d5-gBR"/>
+                        <outlet property="cancelButton" destination="MAe-UE-Sej" id="CeM-Ku-dxQ"/>
+                        <outlet property="titleView" destination="UiV-p4-PRQ" id="yh3-26-uRM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJZ-hj-hAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="-45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="26" height="23"/>
+        <image name="file" width="26" height="24"/>
+        <image name="home_add_card_success" width="150" height="90"/>
+    </resources>
+</document>

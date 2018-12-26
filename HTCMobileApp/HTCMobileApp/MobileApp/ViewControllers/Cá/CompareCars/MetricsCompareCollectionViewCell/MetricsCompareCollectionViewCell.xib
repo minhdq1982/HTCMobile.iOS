@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MetricsCompareCollectionViewCell" id="leB-6q-dSu" customClass="MetricsCompareCollectionViewCell" customModule="HTCMobileApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="349" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEg-4U-09i">
+                        <rect key="frame" x="0.0" y="0.0" width="174.5" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pla-Dx-EqP">
+                        <rect key="frame" x="174.5" y="0.0" width="174.5" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjO-pj-dGN">
+                        <rect key="frame" x="174" y="0.0" width="1" height="44"/>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.86274509803921573" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="jOg-Z6-qbQ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HYM-n0-Vas">
+                        <rect key="frame" x="0.0" y="43" width="349" height="1"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.86274509799999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="3MR-0J-wEt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Pla-Dx-EqP" firstAttribute="width" secondItem="leB-6q-dSu" secondAttribute="width" multiplier="0.5" id="Cc1-Ad-fRp"/>
+                <constraint firstItem="aCV-dc-bV3" firstAttribute="trailing" secondItem="Pla-Dx-EqP" secondAttribute="trailing" id="D4e-0Y-n6W"/>
+                <constraint firstAttribute="bottom" secondItem="UEg-4U-09i" secondAttribute="bottom" id="EeA-mE-HNs"/>
+                <constraint firstAttribute="bottom" secondItem="Pla-Dx-EqP" secondAttribute="bottom" id="MUO-rM-vGw"/>
+                <constraint firstItem="Pla-Dx-EqP" firstAttribute="top" secondItem="leB-6q-dSu" secondAttribute="top" id="O5X-i2-YEH"/>
+                <constraint firstAttribute="bottom" secondItem="JjO-pj-dGN" secondAttribute="bottom" id="P6w-df-ADC"/>
+                <constraint firstItem="aCV-dc-bV3" firstAttribute="bottom" secondItem="HYM-n0-Vas" secondAttribute="bottom" id="Ph3-jd-l1l"/>
+                <constraint firstItem="aCV-dc-bV3" firstAttribute="trailing" secondItem="HYM-n0-Vas" secondAttribute="trailing" id="Wwk-P5-TdN"/>
+                <constraint firstItem="HYM-n0-Vas" firstAttribute="leading" secondItem="aCV-dc-bV3" secondAttribute="leading" id="ZlU-Ph-3ua"/>
+                <constraint firstItem="JjO-pj-dGN" firstAttribute="centerX" secondItem="aCV-dc-bV3" secondAttribute="centerX" id="b6u-Vb-Mga"/>
+                <constraint firstItem="UEg-4U-09i" firstAttribute="width" secondItem="leB-6q-dSu" secondAttribute="width" multiplier="0.5" id="cDh-E6-WKN"/>
+                <constraint firstItem="UEg-4U-09i" firstAttribute="top" secondItem="leB-6q-dSu" secondAttribute="top" id="cZM-oJ-YgB"/>
+                <constraint firstItem="JjO-pj-dGN" firstAttribute="top" secondItem="leB-6q-dSu" secondAttribute="top" id="dpy-mN-7Uk"/>
+                <constraint firstItem="UEg-4U-09i" firstAttribute="leading" secondItem="leB-6q-dSu" secondAttribute="leading" id="qwc-WM-fDm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="aCV-dc-bV3"/>
+            <size key="customSize" width="349" height="50"/>
+            <connections>
+                <outlet property="bottomLineView" destination="HYM-n0-Vas" id="zBL-HF-VcU"/>
+                <outlet property="value1Label" destination="UEg-4U-09i" id="bFb-Je-iaU"/>
+                <outlet property="value2Label" destination="Pla-Dx-EqP" id="Jqb-OF-0aw"/>
+            </connections>
+            <point key="canvasLocation" x="432.80000000000001" y="76.46176911544228"/>
+        </collectionViewCell>
+    </objects>
+</document>

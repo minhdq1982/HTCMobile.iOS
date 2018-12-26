@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InstallmentCollectionViewCell" id="KGY-bC-j4z" customClass="InstallmentCollectionViewCell" customModule="HTCMobileApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kỳ thanh toán 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVQ-Vr-3lq" userLabel="TitleLabel">
+                        <rect key="frame" x="36" y="12" width="327" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="56L-6X-dIa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIP-8x-9Vr">
+                        <rect key="frame" x="36" y="41" width="327" height="168"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vhb-vB-JpQ">
+                                <rect key="frame" x="0.0" y="0.0" width="327" height="168"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9B-51-Dcq">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tổng số gốc còn nợ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiJ-Qf-nk3" userLabel="TitleLabel">
+                                                <rect key="frame" x="12" y="11.5" width="150.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xS-bp-PDq" userLabel="ValueLabel">
+                                                <rect key="frame" x="164.5" y="11.5" width="150.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3xS-bp-PDq" secondAttribute="trailing" constant="12" id="UxJ-Gq-Clw"/>
+                                            <constraint firstItem="3xS-bp-PDq" firstAttribute="centerY" secondItem="D9B-51-Dcq" secondAttribute="centerY" id="Wdn-kH-8tM"/>
+                                            <constraint firstItem="TiJ-Qf-nk3" firstAttribute="leading" secondItem="D9B-51-Dcq" secondAttribute="leading" constant="12" id="a6X-tT-elO"/>
+                                            <constraint firstItem="3xS-bp-PDq" firstAttribute="height" secondItem="TiJ-Qf-nk3" secondAttribute="height" id="bSs-eI-oQX"/>
+                                            <constraint firstItem="TiJ-Qf-nk3" firstAttribute="centerY" secondItem="D9B-51-Dcq" secondAttribute="centerY" id="h0n-Yu-nM2"/>
+                                            <constraint firstItem="3xS-bp-PDq" firstAttribute="width" secondItem="TiJ-Qf-nk3" secondAttribute="width" id="u4F-w7-Rv3"/>
+                                            <constraint firstItem="3xS-bp-PDq" firstAttribute="leading" secondItem="TiJ-Qf-nk3" secondAttribute="trailing" constant="2" id="vRA-4u-Ena"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFr-rE-Vw2">
+                                        <rect key="frame" x="0.0" y="42" width="327" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gốc trong tháng:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQY-48-R65" userLabel="TitleLabel">
+                                                <rect key="frame" x="12" y="11.5" width="150.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5,000,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tR-tB-KZt" userLabel="ValueLabel">
+                                                <rect key="frame" x="164.5" y="11.5" width="150.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="7tR-tB-KZt" secondAttribute="trailing" constant="12" id="7Kb-nU-KoH"/>
+                                            <constraint firstItem="7tR-tB-KZt" firstAttribute="width" secondItem="kQY-48-R65" secondAttribute="width" id="LN9-9f-eCU"/>
+                                            <constraint firstItem="kQY-48-R65" firstAttribute="leading" secondItem="oFr-rE-Vw2" secondAttribute="leading" constant="12" id="Vd3-jR-LCy"/>
+                                            <constraint firstItem="7tR-tB-KZt" firstAttribute="height" secondItem="kQY-48-R65" secondAttribute="height" id="hOc-kL-Gvh"/>
+                                            <constraint firstItem="7tR-tB-KZt" firstAttribute="leading" secondItem="kQY-48-R65" secondAttribute="trailing" constant="2" id="hlD-Ik-JHX"/>
+                                            <constraint firstItem="7tR-tB-KZt" firstAttribute="centerY" secondItem="oFr-rE-Vw2" secondAttribute="centerY" id="rMu-lr-Fle"/>
+                                            <constraint firstItem="kQY-48-R65" firstAttribute="centerY" secondItem="oFr-rE-Vw2" secondAttribute="centerY" id="snO-vS-8bE"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2I-wf-lgG">
+                                        <rect key="frame" x="0.0" y="84" width="327" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lãi trong tháng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgS-Lj-iKP" userLabel="TitleLabel">
+                                                <rect key="frame" x="12" y="11.5" width="150.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38,333" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhY-Bj-WYD" userLabel="ValueLabel">
+                                                <rect key="frame" x="164.5" y="11.5" width="150.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="QhY-Bj-WYD" secondAttribute="trailing" constant="12" id="75s-Et-YBa"/>
+                                            <constraint firstItem="vgS-Lj-iKP" firstAttribute="centerY" secondItem="q2I-wf-lgG" secondAttribute="centerY" id="IjS-nr-0Qs"/>
+                                            <constraint firstItem="QhY-Bj-WYD" firstAttribute="width" secondItem="vgS-Lj-iKP" secondAttribute="width" id="R3u-TT-abq"/>
+                                            <constraint firstItem="QhY-Bj-WYD" firstAttribute="leading" secondItem="vgS-Lj-iKP" secondAttribute="trailing" constant="2" id="hPc-al-JmM"/>
+                                            <constraint firstItem="QhY-Bj-WYD" firstAttribute="centerY" secondItem="q2I-wf-lgG" secondAttribute="centerY" id="i3M-En-JDy"/>
+                                            <constraint firstItem="QhY-Bj-WYD" firstAttribute="height" secondItem="vgS-Lj-iKP" secondAttribute="height" id="lOe-ND-dsJ"/>
+                                            <constraint firstItem="vgS-Lj-iKP" firstAttribute="leading" secondItem="q2I-wf-lgG" secondAttribute="leading" constant="12" id="yvE-0Q-AUt"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFE-2C-vda">
+                                        <rect key="frame" x="0.0" y="126" width="327" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gốc + lãi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4J-4f-LYE" userLabel="TitleLabel">
+                                                <rect key="frame" x="12" y="11.5" width="150.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5,083,000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lt-q1-AeT" userLabel="ValueLabel">
+                                                <rect key="frame" x="164.5" y="11.5" width="150.5" height="19"/>
+                                                <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="15"/>
+                                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="U4J-4f-LYE" firstAttribute="centerY" secondItem="cFE-2C-vda" secondAttribute="centerY" id="1Mj-QO-DI7"/>
+                                            <constraint firstItem="5lt-q1-AeT" firstAttribute="leading" secondItem="U4J-4f-LYE" secondAttribute="trailing" constant="2" id="7O8-Bs-0ZO"/>
+                                            <constraint firstAttribute="trailing" secondItem="5lt-q1-AeT" secondAttribute="trailing" constant="12" id="7f3-yf-FvV"/>
+                                            <constraint firstItem="U4J-4f-LYE" firstAttribute="leading" secondItem="cFE-2C-vda" secondAttribute="leading" constant="12" id="cHQ-lo-Ikq"/>
+                                            <constraint firstItem="5lt-q1-AeT" firstAttribute="centerY" secondItem="cFE-2C-vda" secondAttribute="centerY" id="l1g-xe-g7t"/>
+                                            <constraint firstItem="5lt-q1-AeT" firstAttribute="height" secondItem="U4J-4f-LYE" secondAttribute="height" id="rjV-KD-vq4"/>
+                                            <constraint firstItem="5lt-q1-AeT" firstAttribute="width" secondItem="U4J-4f-LYE" secondAttribute="width" id="s4j-CG-koo"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vhb-vB-JpQ" secondAttribute="bottom" id="2fo-g6-Bed"/>
+                            <constraint firstAttribute="height" constant="168" id="9ue-nJ-6qZ"/>
+                            <constraint firstAttribute="trailing" secondItem="vhb-vB-JpQ" secondAttribute="trailing" id="AmC-AY-ent"/>
+                            <constraint firstItem="vhb-vB-JpQ" firstAttribute="leading" secondItem="aIP-8x-9Vr" secondAttribute="leading" id="PId-IJ-lOK"/>
+                            <constraint firstItem="vhb-vB-JpQ" firstAttribute="top" secondItem="aIP-8x-9Vr" secondAttribute="top" id="X2W-e4-orx"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rW-pD-yUr" userLabel="LowerLineView">
+                        <rect key="frame" x="17" y="16.5" width="2" height="203.5"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="WR8-K0-4c8"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7e-eW-e2W" userLabel="UpperLineView">
+                        <rect key="frame" x="17" y="0.0" width="2" height="28.5"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="9m4-Gh-anU"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Qs-DR-iTQ" userLabel="DotView">
+                        <rect key="frame" x="12" y="16.5" width="12" height="12"/>
+                        <color key="backgroundColor" red="0.0" green="0.66666666666666663" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="BdZ-OB-sNK"/>
+                            <constraint firstAttribute="width" constant="12" id="h15-BP-l5N"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l7e-eW-e2W" firstAttribute="bottom" secondItem="6Qs-DR-iTQ" secondAttribute="bottom" id="Izf-rk-BTo"/>
+                <constraint firstItem="pbr-xr-785" firstAttribute="bottom" secondItem="5rW-pD-yUr" secondAttribute="bottom" id="L0O-gl-5of"/>
+                <constraint firstItem="aIP-8x-9Vr" firstAttribute="trailing" secondItem="TVQ-Vr-3lq" secondAttribute="trailing" id="Mb3-1C-MAk"/>
+                <constraint firstItem="TVQ-Vr-3lq" firstAttribute="top" secondItem="KGY-bC-j4z" secondAttribute="top" constant="12" id="OgC-pX-RCv"/>
+                <constraint firstItem="6Qs-DR-iTQ" firstAttribute="leading" secondItem="pbr-xr-785" secondAttribute="leading" constant="12" id="UU9-fA-wjP"/>
+                <constraint firstItem="5rW-pD-yUr" firstAttribute="centerX" secondItem="6Qs-DR-iTQ" secondAttribute="centerX" id="Uma-ec-9fI"/>
+                <constraint firstItem="6Qs-DR-iTQ" firstAttribute="centerY" secondItem="TVQ-Vr-3lq" secondAttribute="centerY" id="V7V-sn-hBG"/>
+                <constraint firstItem="l7e-eW-e2W" firstAttribute="centerX" secondItem="6Qs-DR-iTQ" secondAttribute="centerX" id="XY0-5f-dtJ"/>
+                <constraint firstItem="aIP-8x-9Vr" firstAttribute="top" secondItem="TVQ-Vr-3lq" secondAttribute="bottom" constant="8" id="eeS-Tk-X5X"/>
+                <constraint firstItem="5rW-pD-yUr" firstAttribute="top" secondItem="6Qs-DR-iTQ" secondAttribute="top" id="gEz-iR-g3n"/>
+                <constraint firstItem="l7e-eW-e2W" firstAttribute="top" secondItem="pbr-xr-785" secondAttribute="top" id="jnT-RF-T7l"/>
+                <constraint firstItem="TVQ-Vr-3lq" firstAttribute="leading" secondItem="KGY-bC-j4z" secondAttribute="leading" constant="36" id="ksZ-ue-4mE"/>
+                <constraint firstAttribute="trailing" secondItem="TVQ-Vr-3lq" secondAttribute="trailing" constant="12" id="lQZ-w0-4qe"/>
+                <constraint firstItem="aIP-8x-9Vr" firstAttribute="leading" secondItem="TVQ-Vr-3lq" secondAttribute="leading" id="pPy-7k-7Fd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="pbr-xr-785"/>
+            <size key="customSize" width="349" height="229"/>
+            <connections>
+                <outlet property="dotView" destination="6Qs-DR-iTQ" id="6sX-mN-Y6q"/>
+                <outlet property="interestOfMonthTitleLabel" destination="vgS-Lj-iKP" id="O8M-D3-owK"/>
+                <outlet property="interestOfMonthValueLabel" destination="QhY-Bj-WYD" id="5gM-R9-Zgf"/>
+                <outlet property="originalAndInterestTitleLabel" destination="U4J-4f-LYE" id="wLm-6q-m0X"/>
+                <outlet property="originalAndInterestValueLabel" destination="5lt-q1-AeT" id="Hyk-Ow-Xea"/>
+                <outlet property="originalInMonthTitleLabel" destination="kQY-48-R65" id="rUm-k8-EHZ"/>
+                <outlet property="originalInMonthValueLabel" destination="7tR-tB-KZt" id="4xn-se-LdL"/>
+                <outlet property="titleLabel" destination="TVQ-Vr-3lq" id="QZY-IC-Wgx"/>
+                <outlet property="totalOutstandingDebtTitleLabel" destination="TiJ-Qf-nk3" id="76n-hZ-lKM"/>
+                <outlet property="totalOutstandingDebtValueLabel" destination="3xS-bp-PDq" id="aKn-DH-PUH"/>
+                <outlet property="upperLineView" destination="l7e-eW-e2W" id="Ked-N5-qtZ"/>
+            </connections>
+            <point key="canvasLocation" x="887.20000000000005" y="225.78710644677662"/>
+        </collectionViewCell>
+    </objects>
+</document>

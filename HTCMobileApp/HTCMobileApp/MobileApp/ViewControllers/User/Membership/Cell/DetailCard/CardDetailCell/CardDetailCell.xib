@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HyundaiSansVNHeadOffice-Medium.ttf">
+            <string>HyundaiSansVnHeadOffice-Medium</string>
+        </array>
+        <array key="HyundaiSansVNHeadOffice-Regular.ttf">
+            <string>HyundaiSansVnHeadOffice-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardDetailCell" id="KGk-i7-Jjw" customClass="CardDetailCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="306"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="305.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÔNG TIN THẺ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDL-U4-T0J">
+                        <rect key="frame" x="12" y="0.0" width="151" height="25"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.050000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJb-zp-jvW">
+                        <rect key="frame" x="12" y="38" width="351" height="48"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="Pu4-gc-u8v"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Điểm tích" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1g-GA-VrP">
+                        <rect key="frame" x="24" y="55" width="66" height="19"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày kích hoạt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAK-0r-9ul">
+                        <rect key="frame" x="12" y="104" width="105" height="19"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đại lý đăng ký" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gV-h9-Tvj">
+                        <rect key="frame" x="12" y="168.5" width="97.5" height="19"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hà Nội" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrf-RI-V6O">
+                        <rect key="frame" x="12" y="223" width="48" height="19"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ngày hết kỳ xét hạng" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xy4-Hh-a7e">
+                        <rect key="frame" x="175" y="104" width="146.5" height="19"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/08/2017" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLC-el-rRW">
+                        <rect key="frame" x="12" y="129" width="97.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyundai Giải Phóng" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvD-Sj-76C">
+                        <rect key="frame" x="12" y="193.5" width="158.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31/08/2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXf-od-so9">
+                        <rect key="frame" x="175" y="129" width="97.5" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Medium" family="Hyundai Sans Head Office" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9C0-mX-EsC">
+                        <rect key="frame" x="102" y="44.5" width="58" height="40"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="32"/>
+                        <color key="textColor" red="0.85490196078431369" green="0.74901960784313726" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.050000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enC-Vf-cmW">
+                        <rect key="frame" x="0.0" y="298" width="375" height="8"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="hdE-PG-yHm"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0123456789" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZC-15-2Qq">
+                        <rect key="frame" x="12" y="248" width="90" height="19"/>
+                        <fontDescription key="fontDescription" name="HyundaiSansVnHeadOffice-Regular" family="Hyundai Sans VN Head Office" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="bLC-el-rRW" firstAttribute="top" secondItem="UAK-0r-9ul" secondAttribute="bottom" constant="6" id="4AL-gT-P9a"/>
+                    <constraint firstItem="rZC-15-2Qq" firstAttribute="leading" secondItem="vrf-RI-V6O" secondAttribute="leading" id="58u-5k-Uzf"/>
+                    <constraint firstItem="I1g-GA-VrP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="6VG-T5-PgF"/>
+                    <constraint firstItem="jvD-Sj-76C" firstAttribute="top" secondItem="6gV-h9-Tvj" secondAttribute="bottom" constant="6" id="9aT-QW-hei"/>
+                    <constraint firstItem="6gV-h9-Tvj" firstAttribute="leading" secondItem="UAK-0r-9ul" secondAttribute="leading" id="BLI-Pn-LGd"/>
+                    <constraint firstItem="iXf-od-so9" firstAttribute="leading" secondItem="Xy4-Hh-a7e" secondAttribute="leading" id="JA6-Ok-A1T"/>
+                    <constraint firstItem="iXf-od-so9" firstAttribute="top" secondItem="Xy4-Hh-a7e" secondAttribute="bottom" constant="6" id="KI4-1Z-k3Y"/>
+                    <constraint firstItem="UAK-0r-9ul" firstAttribute="top" secondItem="ZJb-zp-jvW" secondAttribute="bottom" constant="18" id="KgG-IJ-iqv"/>
+                    <constraint firstItem="6gV-h9-Tvj" firstAttribute="top" secondItem="bLC-el-rRW" secondAttribute="bottom" constant="18" id="NBY-U2-O2S"/>
+                    <constraint firstItem="jvD-Sj-76C" firstAttribute="leading" secondItem="6gV-h9-Tvj" secondAttribute="leading" id="OAu-Pf-RLT"/>
+                    <constraint firstItem="9C0-mX-EsC" firstAttribute="leading" secondItem="I1g-GA-VrP" secondAttribute="trailing" constant="12" id="SF1-Gl-kfc"/>
+                    <constraint firstAttribute="bottom" secondItem="enC-Vf-cmW" secondAttribute="bottom" constant="-0.5" id="SeN-ti-ELR"/>
+                    <constraint firstItem="rZC-15-2Qq" firstAttribute="top" secondItem="vrf-RI-V6O" secondAttribute="bottom" constant="6" id="YYc-UY-qVx"/>
+                    <constraint firstItem="ZJb-zp-jvW" firstAttribute="top" secondItem="gDL-U4-T0J" secondAttribute="bottom" constant="13" id="Zzk-2l-SKt"/>
+                    <constraint firstItem="enC-Vf-cmW" firstAttribute="top" secondItem="rZC-15-2Qq" secondAttribute="bottom" constant="31" id="aM2-kP-7au"/>
+                    <constraint firstItem="I1g-GA-VrP" firstAttribute="top" secondItem="gDL-U4-T0J" secondAttribute="bottom" constant="30" id="aZW-ld-lyP"/>
+                    <constraint firstAttribute="trailing" secondItem="ZJb-zp-jvW" secondAttribute="trailing" constant="12" id="bdV-hJ-i4h"/>
+                    <constraint firstItem="UAK-0r-9ul" firstAttribute="leading" secondItem="ZJb-zp-jvW" secondAttribute="leading" id="hCT-6Y-PKy"/>
+                    <constraint firstItem="Xy4-Hh-a7e" firstAttribute="top" secondItem="UAK-0r-9ul" secondAttribute="top" id="lCo-2z-bcT"/>
+                    <constraint firstItem="bLC-el-rRW" firstAttribute="leading" secondItem="UAK-0r-9ul" secondAttribute="leading" id="ldp-tN-gyg"/>
+                    <constraint firstItem="Xy4-Hh-a7e" firstAttribute="leading" secondItem="UAK-0r-9ul" secondAttribute="trailing" constant="58" id="o8C-NM-Aie"/>
+                    <constraint firstItem="vrf-RI-V6O" firstAttribute="leading" secondItem="jvD-Sj-76C" secondAttribute="leading" id="p67-Qp-Q5X"/>
+                    <constraint firstItem="gDL-U4-T0J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qSJ-tZ-3eQ"/>
+                    <constraint firstItem="ZJb-zp-jvW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="vvf-RL-Ck0"/>
+                    <constraint firstItem="vrf-RI-V6O" firstAttribute="top" secondItem="jvD-Sj-76C" secondAttribute="bottom" constant="8" id="wXI-Vc-29j"/>
+                    <constraint firstItem="9C0-mX-EsC" firstAttribute="centerY" secondItem="I1g-GA-VrP" secondAttribute="centerY" id="xp9-ad-X7Y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.019607843137254902" green="0.13725490196078433" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="enC-Vf-cmW" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="15D-ye-TnL"/>
+                <constraint firstItem="gDL-U4-T0J" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="12" id="B12-1i-ZQP"/>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="enC-Vf-cmW" secondAttribute="trailing" id="MUe-14-dF9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activeDateLabel" destination="bLC-el-rRW" id="LeB-Ag-IW1"/>
+                <outlet property="brandAddressLabel" destination="vrf-RI-V6O" id="NRN-h6-7rc"/>
+                <outlet property="brandLabel" destination="jvD-Sj-76C" id="naV-C7-stz"/>
+                <outlet property="expiredDateLabel" destination="iXf-od-so9" id="0Dp-BK-Fj0"/>
+                <outlet property="phoneLabel" destination="rZC-15-2Qq" id="eIr-cM-Sz7"/>
+                <outlet property="pointLabel" destination="9C0-mX-EsC" id="tFs-9v-UDB"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="106.14692653673164"/>
+        </tableViewCell>
+    </objects>
+</document>

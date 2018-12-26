@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeadDetailCell" id="KGk-i7-Jjw" customClass="HeadDetailCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="353"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="352.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqY-Ur-vyF" customClass="FSPagerView" customModule="FSPagerView">
+                        <rect key="frame" x="0.0" y="39" width="320" height="230"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="230" id="V9l-1J-UDy"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqe-h4-1E0">
+                        <rect key="frame" x="165.5" y="296" width="130.5" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="JtG-B5-rrv"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                        <state key="normal" title="Xoá thẻ" image="delete_card">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="onDeleteCar:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GsU-SU-iJN"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F70-G5-sge">
+                        <rect key="frame" x="154.5" y="289" width="11" height="11"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="Lxr-DB-Lc6"/>
+                            <constraint firstAttribute="width" constant="11" id="rWG-oC-rm7"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl9-BM-g19">
+                        <rect key="frame" x="24" y="296" width="130.5" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="dEl-QB-vIv"/>
+                        </constraints>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                        <state key="normal" title="Lịch sử" image="history_card">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="gotoHisroryVC:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0H8-pS-J9a"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sqe-h4-1E0" secondAttribute="bottom" constant="12.5" id="2xN-mM-fKL"/>
+                    <constraint firstItem="F70-G5-sge" firstAttribute="leading" secondItem="cl9-BM-g19" secondAttribute="trailing" id="Ai8-Uh-SS7"/>
+                    <constraint firstItem="sqe-h4-1E0" firstAttribute="leading" secondItem="F70-G5-sge" secondAttribute="trailing" id="SsF-VS-7jo"/>
+                    <constraint firstItem="F70-G5-sge" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="eq8-fZ-bdb"/>
+                    <constraint firstItem="nqY-Ur-vyF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="k1x-YY-5bu"/>
+                    <constraint firstItem="F70-G5-sge" firstAttribute="top" secondItem="nqY-Ur-vyF" secondAttribute="bottom" constant="20" id="kSc-Vv-dGd"/>
+                    <constraint firstItem="nqY-Ur-vyF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nMd-EF-y2b"/>
+                    <constraint firstItem="sqe-h4-1E0" firstAttribute="top" secondItem="nqY-Ur-vyF" secondAttribute="bottom" constant="27" id="uxb-p8-Do8"/>
+                    <constraint firstItem="cl9-BM-g19" firstAttribute="bottom" secondItem="sqe-h4-1E0" secondAttribute="bottom" id="vtK-Oh-UKS"/>
+                    <constraint firstItem="cl9-BM-g19" firstAttribute="top" secondItem="nqY-Ur-vyF" secondAttribute="bottom" constant="27" id="yrm-Uf-Jdh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="sqe-h4-1E0" secondAttribute="trailing" constant="24" id="M08-kI-wni"/>
+                <constraint firstItem="nqY-Ur-vyF" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" id="TNR-IW-i9s"/>
+                <constraint firstItem="cl9-BM-g19" firstAttribute="leading" secondItem="njF-e1-oar" secondAttribute="leading" constant="24" id="dBt-rF-hvc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="deleteCardButton" destination="sqe-h4-1E0" id="zhf-Fg-Kse"/>
+                <outlet property="fsPagerView" destination="nqY-Ur-vyF" id="xGD-iQ-tbA"/>
+                <outlet property="historyButton" destination="cl9-BM-g19" id="XbQ-Ds-yh1"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="83.208395802098963"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete_card" width="19" height="19"/>
+        <image name="history_card" width="19" height="19"/>
+    </resources>
+</document>

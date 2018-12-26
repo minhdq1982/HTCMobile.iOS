@@ -1,0 +1,26 @@
+/*
+  Localizable.strings
+  HTCMobileApp
+
+  Created by Tuan Pham Hai  on 10/19/18.
+  Copyright © 2018 Tinhvan Outsourcing JSC. All rights reserved.
+*/
+
+"home.title" = "Home";
+"cars.title" = "Buy Cars";
+"services.title" = "Services";
+"news.title" = "News";
+"support.title" = "Support";
+
+//  Terms of use
+"termofuse.text.agree" = "Agree";
+
+
+
+
+
+
+
+
+
+

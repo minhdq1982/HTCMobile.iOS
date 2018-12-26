@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerPagerViewCell" id="vZD-3O-3M4" customClass="BannerPagerViewCell" customModule="HTCMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner1" translatesAutoresizingMaskIntoConstraints="NO" id="CtA-cR-r9c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-ER-QXQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
+                        <connections>
+                            <action selector="tapBannerAction:" destination="vZD-3O-3M4" eventType="touchUpInside" id="5mx-UR-VRi"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CtA-cR-r9c" secondAttribute="bottom" id="2Fc-1Z-3na"/>
+                <constraint firstAttribute="trailing" secondItem="Ixy-ER-QXQ" secondAttribute="trailing" id="FCA-vr-PHw"/>
+                <constraint firstAttribute="bottom" secondItem="Ixy-ER-QXQ" secondAttribute="bottom" id="PKY-hj-H2X"/>
+                <constraint firstItem="Ixy-ER-QXQ" firstAttribute="top" secondItem="vZD-3O-3M4" secondAttribute="top" id="RhS-LT-SAb"/>
+                <constraint firstItem="CtA-cR-r9c" firstAttribute="top" secondItem="vZD-3O-3M4" secondAttribute="top" id="STW-0Q-1yT"/>
+                <constraint firstAttribute="trailing" secondItem="CtA-cR-r9c" secondAttribute="trailing" id="VwT-o3-AlP"/>
+                <constraint firstItem="Ixy-ER-QXQ" firstAttribute="leading" secondItem="vZD-3O-3M4" secondAttribute="leading" id="kdP-kh-3Bq"/>
+                <constraint firstItem="CtA-cR-r9c" firstAttribute="leading" secondItem="vZD-3O-3M4" secondAttribute="leading" id="tDZ-6z-Jt0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="DDC-Ec-OpE"/>
+            <size key="customSize" width="350" height="134"/>
+            <connections>
+                <outlet property="carImageView" destination="CtA-cR-r9c" id="n3y-0I-b2L"/>
+            </connections>
+            <point key="canvasLocation" x="377.60000000000002" y="505.54722638680664"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="banner1" width="1053" height="711"/>
+    </resources>
+</document>

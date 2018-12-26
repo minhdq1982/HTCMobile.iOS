@@ -1,0 +1,80 @@
+# Uncomment the next line to define a global platform for your project
+inhibit_all_warnings!
+platform :ios, '10.0'
+
+target 'HTCMobileApp' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for HTCMobileApp
+  # A tool to enforce Swift style and conventions
+  #pod 'SwiftLint'
+  
+  # Get strong typed, autocompleted resources like images, fonts and segues in Swift projects
+  pod 'R.swift'
+  
+  # ReactiveX for Swift
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'RxAnimated'
+  pod 'RxGesture'
+  pod 'RxCoreLocation'
+  pod 'GoogleMaps', '~> 2.5.0'
+  pod 'RxGoogleMaps'
+
+  
+  # Networking
+  pod 'Alamofire'
+  pod 'RxAlamofire'
+  pod 'Kingfisher'
+  
+  # Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView.
+  pod 'IQKeyboardManagerSwift', '~> 5.0.7'
+  
+  # ObjectMapper is a framework written in Swift that makes it easy for you to convert your model objects (classes and structs) to and from JSON
+  pod 'ObjectMapper'
+  
+  # Side menu
+  pod 'SideMenu'
+  
+  # Loading indicator
+  pod 'NVActivityIndicatorView'
+  pod 'SwiftMessages'
+  
+  pod 'FSPagerView'
+  pod 'FSCalendar'
+  pod 'DropDown', '~> 2.3.1'
+  pod 'ActionSheetPicker-3.0', '~> 2.3.0'
+  pod 'EFQRCode'
+  pod 'Barcode128View'
+  # pod 'SwiftDate', '~> 4.5.1'
+     
+  # Firebase
+  pod 'Firebase/Core'
+  pod 'Fabric'
+  pod 'Crashlytics'
+  
+#  pod 'KYDrawerController'
+
+#  pod 'Presentation'
+#  pod 'Pages'
+#  pod 'Cartography'
+  pod 'Pulley'
+  pod 'lottie-ios'
+  pod 'SwiftyJSON', '~> 4.0'
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == 'Pulley'
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.2'
+            end
+        else
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.0'
+            end
+        end
+    end
+end
